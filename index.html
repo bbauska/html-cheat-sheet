@@ -1,0 +1,2994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Technical Documentation: HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+  <!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/HTML Cheat Sheet.css" rel="stylesheet" type="text/css">
+  <title>Technical Documentation</title>
+</head>
+<body>
+  <nav id="navbar" class="sidenav">
+    <header><img src="https://farm8.staticflickr.com/7927/47144358992_9522cf8bb0.jpg" alt="HTML Cheat Sheet Logo">
+    <!--<h1>HTML Cheat Sheet</h1>-->
+	</header>
+    <a class="nav-link" href="#introduction" rel="internal">Introduction</a>
+    <a class="nav-link" href="#basic_html_elements" rel="internal">Basic HTML Elements</a>
+    <button class="dropdown-btn"><a class="nav-link" href="#metadata_html_elements" rel="internal">
+	  Metadata HTML Elements</a><i class="iconDown"></i>
+	</button>
+    <div class="dropdown">
+      <a href="#base">Base Tag</a>
+      <a href="#head">Head Tag</a>
+      <a href="#link">Link Tag</a>
+      <a href="#meta">Meta Tag</a>
+      <a href="#style">Style Tag</a>
+      <a href="#title">Title Tag</a>
+    </div>
+    <button class="dropdown-btn"><a class="nav-link" href="#content_sectioning_html_elements" rel="internal">
+	  Content Sectioning HTML Elements</a><i class="iconDown"></i>
+	</button>
+    <div class="dropdown">
+      <a href="#address">ADDRESS Tag</a>
+      <a href="#article">ARTICLE Tag</a>
+      <a href="#aside">ASIDE Tag</a>
+      <a href="#body">BODY Tag</a>
+      <a href="#footer">FOOTER Tag</a>
+      <a href="#h1-h6">H1 - H6 Tag</a>
+      <a href="#header">HEADER Tag</a>
+      <a href="#hgroup">HGROUP Tag</a>
+      <a href="#nav">NAV Tag</a>
+      <a href="#section">SECTION Tag</a>
+      <a href="#blockquote">BLOCKQUOTE Tag</a>
+    </div>
+    <button class="dropdown-btn"><a class="nav-link" href="#content_grouping_html_elements" rel="internal">
+	  Content Grouping HTML Elements</a><i class="iconDown"></i>
+	</button>
+    <div class="dropdown">
+      <a href="#br">BR Tag</a>
+      <a href="#dd">DD Tag</a>
+      <a href="#div">DIV Tag</a>
+      <a href="#dl">DL Tag</a>
+      <a href="#dt">DT Tag</a>
+      <a href="#figcaption">FIGCAPTION Tag</a>
+      <a href="#figure">FIGURE Tag</a>
+      <a href="#hr">HR Tag</a>
+      <a href="#li">LI Tag</a>
+      <a href="#main">MAIN Tag</a>
+      <a href="#ol">OL Tag</a>
+      <a href="#p">P Tag</a>
+      <a href="#pre">PRE Tag</a>
+      <a href="#ul">UL Tag</a>
+    </div>
+    <button class="dropdown-btn"><a class="nav-link" href="#text_level_semantic_html_elements" rel="internal">
+	  Text Level Semantic HTML Elements</a><i class="iconDown"></i>
+	</button>
+    <div class="dropdown">
+      <a href="#a">A Tag</a>
+      <a href="#abbr">ABBR Tag</a>
+      <a href="#b">B Tag</a>
+      <a href="#bdi">BDI Tag</a>
+      <a href="#bdo">BDO Tag</a>
+      <a href="#cite">CITE Tag</a>
+      <a href="#code">CODE Tag</a>
+      <a href="#del">DEL Tag</a>
+      <a href="#dfn">DFN Tag</a>
+      <a href="#em">EM Tag</a>
+      <a href="#i">I Tag</a>
+      <a href="#ins">INS Tag</a>
+      <a href="#kbd">KBD Tag</a>
+      <a href="#mark">MARK Tag</a>
+      <a href="#q">Q Tag</a>
+      <a href="#rp">RP Tag</a>
+      <a href="#rt">RT Tag</a>
+      <a href="#ruby">RUBY Tag</a>
+      <a href="#s">S Tag</a>
+      <a href="#samp">SAMP Tag</a>
+      <a href="#small">SMALL Tag</a>
+      <a href="#span">SPAN Tag</a>
+      <a href="#strong">STRONG Tag</a>
+      <a href="#sub">SUB Tag</a>
+      <a href="#sup">SUP Tag</a>
+      <a href="#time">TIME Tag</a>
+      <a href="#var">VAR Tag</a>
+      <a href="#wbr">WBR Tag</a>
+    </div>
+    <button class="dropdown-btn"><a class="nav-link" href="#table_html_elements" rel="internal">
+	  Table HTML Elements</a><i class="iconDown"></i>
+	</button>
+    <div class="dropdown">
+      <a href="#caption">CAPTION Tag</a>
+      <a href="#col">COL Tag</a>
+      <a href="#colgroup">COLGROUP Tag</a>
+      <a href="#table">TABLE Tag</a>
+      <a href="#tbody">TBODY Tag</a>
+      <a href="#td">TD Tag</a>
+      <a href="#tfoot">TFOOT Tag</a>
+      <a href="#th">TH Tag</a>
+      <a href="#thead">THEAD Tag</a>
+      <a href="#tr">TR Tag</a>
+    </div>
+    <button class="dropdown-btn"><a class="nav-link" href="#form_html_elements" rel="internal">
+	  Form HTML Elements</a><i class="iconDown"></i>
+	</button>
+    <div class="dropdown">
+                    <a href="#button">BUTTON Tag</a>
+                    <a href="#data">DATA Tag</a>
+                    <a href="#datalist">DATALIST Tag</a>
+                    <a href="#fieldset">FIELDSET Tag</a>
+                    <a href="#form">FORM Tag</a>
+                    <a href="#input">INPUT Tag</a>
+                    <a href="#label">LABEL Tag</a>
+                    <a href="#legend">LEGEND Tag</a>
+                    <a href="#meter">METER Tag</a>
+                    <a href="#optgroup">OPTGROUP Tag</a>
+                    <a href="#option">OPTION Tag</a>
+                    <a href="#output">OUTPUT Tag</a>
+                    <a href="#progress">PROGRESS Tag</a>
+                    <a href="#select">SELECT Tag</a>
+                    <a href="#textarea">TEXTAREA Tag</a>
+                </div>
+        <button class="dropdown-btn"><a class="nav-link" href="#content_embedding_html_elements" rel="internal">Content Embedding HTML Elements</a><i class="iconDown"></i></button>
+            <div class="dropdown">
+                    <a href="#embed">EMBED Tag</a>
+                    <a href="#iframe">IFRAME Tag</a>
+                    <a href="#img">IMAGE Tag</a>
+                    <a href="#object">OBJECTTag</a>
+                    <a href="#param">PARAM Tag</a>
+                    <a href="#source">SOURCE Tag</a>
+                    <a href="#area">AREA Tag</a>
+                </div>
+        <button class="dropdown-btn"><a class="nav-link" href="#images_and_multimedia_html_elements" rel="internal">Images and Multimedia HTML Elements</a><i class="iconDown"></i></button>
+            <div class="dropdown">
+                    <a href="#audio">AUDIO Tag</a>
+                    <a href="#map">MAP Tag</a>
+                    <a href="#track">TRACK Tag</a>
+                    <a href="#video">VIDEO Tag</a>
+                    <a href="#details">DETAILS Tag</a>
+                    <a href="#dialog">DIALOG Tag</a>
+                    <a href="#menu">MENU Tag</a>
+                    <a href="#summary">SUMMARY Tag</a>
+                    <a href="#canvas">CANVAS Tag</a>
+                    <a href="#noscript">NOSCRIPT Tag</a>
+                    <a href="#script">SCRIPT Tag</a>
+                </div>
+        <a class="nav-link" href="#global_html_attributes" rel="internal">Global HTML Attributes</a>
+        <a class="nav-link" href="#new_tags_in_html5" rel="internal">New Tags in HTML5</a>
+        <a class="nav-link" href="#references" rel="internal">References</a>
+</nav>
+
+<script>
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<main id="main-doc">
+
+    <section class="main-section" id="introduction">
+    <header><h3>Introduction</h3></header>
+        
+        <article>
+            <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.
+
+Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+
+HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as &lt;img /&gt; and &lt;input /&gt; directly introduce content into the page. Other tags such as &lt;p&gt; surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.</p>
+        </article>
+    </section>
+    <!---------------------------------------------------------------BASIC------------------------------------------------------------------->
+    <section class="main-section" id="basic_html_elements">
+        <header><h3>Basic HTML Elements</h3></header>
+        <article>
+            <p>HTML TAG
+Specifies an html document. The HTML &lt;html&gt; element (or HTML root element) represents the root of an HTML document. All other elements must be descendants of this element. Since the &lt;html&gt; element is the first in a document other than comments, it is called the root element. Although this tag can be implied, or not required, with HTML, it is required to be opened and closed in XHTML.</p>
+            <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>        
+                        <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&emsp;&emsp;&lt;head&gt;...&lt;/head&gt;<br>&emsp;&emsp;&lt;body&gt;This page can be opened in a browser&lt;/body&gt;<br>&lt;/html&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>This page can be opened in a browser</p>
+                      </div>
+            </div>
+        </article>
+    </section>
+    <!--------------------------------------------------------------METADATA----------------------------------------------------------------->
+    <section class="main-section" id="metadata_html_elements">
+        <header><h3>Metadata HTML Elements</h3></header>
+                <article id="base">
+            <h4>BASE TAG</h4>
+            <p>Specifies URL which non-absolute URLs are relative to. The HTML &lt;base&gt; element specifies the base URL to use for all relative URLs contained within a document. There can be only one &lt;base&gt; element in a document.
+
+Attributes (modifiers)
+href | target (_self | _blank | _parent | _top)</p>
+            <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>        
+                        <code>&lt;base href="http://www.fakewebsite.com/UseThisAsBaseURL.html"&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Unviewable by user</p>
+                      </div>
+            </div>
+        </article>
+        
+        <article id="head">
+            <h4>HEAD TAG</h4>
+            <p>First element of the HTML document. Collection of metadata for the Document. The HTML &lt;head&gt; element provides general information (metadata) about the document, including its title and links to its scripts and style sheets.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;html&gt;<br>&emsp;&lt;head&gt;<br>&emsp;&emsp;&lt;title&gt;HelloWorld&gt;/title&gt;<br>&emsp;&lt;/head&gt;<br>&lt;/html&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Unviewable by user</p>
+                      </div>
+            </div>
+        </article>    
+        <article id="link">
+            <h4>LINK TAG</h4>
+            <p>Other resources related to the document. The HTML <link> element specifies relationships between the current document and an external resource. Possible uses for this element include defining a relational framework for navigation. This Element is most used to link to style sheets.
+
+Attributes (modifiers)
+href | rel | media | hreflang | type | sizes | crossorigin | integrity</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;link href="style.css" rel="stylesheet" type="text/stylesheet&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Unviewable by user</p>
+                      </div>
+            </div>
+        </article>
+        <article id="meta">
+            <h4>META TAG</h4>
+            <p>Document metadata that can't be expressed with other elements. The HTML &lt;meta&gt; element represents any metadata information that cannot be represented by one of the other HTML meta-related elements (&lt;base&gt;, &lt;link&gt;, &lt;script&gt;, &lt;style&gt; or &lt;title&gt;). Depending on the attributes set, the kind of metadata can be one of the following: If name is set, it is document-level metadata, applying to the whole page. If http-equiv is set, it is a pragma directive, i.e. information normally given by the web server about how the web page should be served. If charset is set, it is a charset declaration, i.e. the charset used for the serialized form of the webpage. If itemprop is set, it is user-defined metadata, transparent for the user-agent as the semantics of the metadata is user-specific.
+
+Attributes (modifiers)
+charset | content | http-equiv | name</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;meta charset="utf-8"&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Unviewable by user</p>
+                      </div>
+            </div>
+        </article>
+        <article id="style">
+            <h4>STYLE TAG</h4>
+            <p>Embed style information in the documents. The HTML &lt;style&gt; element contains style information for a document, or part of a document. By default, the style instructions written inside that element are expected to be CSS.
+
+Attributes (modifiers)
+media | type | title</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;style&gt;<br>&emsp;p {color:red;}<br>&lt;/style&gt;<br>&lt;p&gt;this is RED&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                      <div>
+                          <style>
+                            p1 {color:red;}
+                        </style>
+                            <p1>this is RED</p1>
+
+                      </div>
+            </div>
+            </div>
+        </article>
+        <article id="title">
+            <h4>TITLE TAG</h4>
+            <p>Document title or name. The HTML &lt;title&gt; element defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text, and any contained tags are ignored.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;title&gt;This is the page title&lt;/title&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Unviewable by userr</p>
+                      </div>
+            </div>
+        </article>
+    </section>                
+    <!-------------------------------------------------------------SECTIONING---------------------------------------------------------------->
+    <section class="main-section" id="content_sectioning_html_elements">
+        <header><h3>Content Sectioning HTML Elements</h3></header>
+        <article id="address">
+            <h4>ADDRESS TAG</h4>
+            <p>The HTML &lt;address&gt; element supplies contact information for its nearest &lt;article&gt; or &lt;body&gt; ancestor; in the latter case, it applies to the whole document.</p>
+
+            <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;address&gt;freecodecamp.com&lt;/address&gt;</code>
+                  </div>
+                  <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>freecodecamp.com</p>
+                  </div>
+            </div>
+        </article>
+        <article id="article">
+            <h4>ARTICLE TAG</h4>
+            <p>Section of the page content, such as a blog or forum post. The HTML &lt;article&gt; element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). This could be a forum post, a magazine or newspaper article, a blog entry, an object, or any other independent item of content. Each &lt;article&gt; should be identified, typically by including a heading (&lt;h1&gt;-&lt;h6&gt; element) as a child of the &lt;article&gt; element.</p>
+
+            <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>        
+                     <code>&lt;article class="Food_review"&gt;<br>&emsp;&lt;p&gt;I love this pizza. Putting pineapple on it? I was scared at first but its really not as bad as people say. 4/5 Stars from me&lt;/p&gt;<br>&emsp;&lt;footer&gt;<br>&emsp;&emsp;&lt;p&gt;Posted on &lt;time datetime="2019-02-21 19:00"&gt;February 21&lt;/time&gt; by Josh&lt;/p&gt;<br>&emsp;&lt;/footer&gt;<br>&lt;/article&gt;</code>
+                  </div>
+                <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>I love this pizza. Putting pineapple on it? I was scared at first but its really not as bad as people say. 4/5 Stars from me<br>Posted on February 21 by Josh</p>
+                  </div>
+            </div>
+        </article>
+        <article id="aside">
+            <h4>ASIDE TAG</h4>
+            <p>Content related to surrounding elements that doesn't belong inline, such as advertising or quotes. The HTML &lt;aside&gt; element represents a section of the page with content connected tangentially to the rest, which could be considered separate from that content. These sections are often represented as sidebars or inserts. They often contain the definitions on the sidebars, such as definitions from the glossary; there may also be other types of information, such as related advertisements; the biography of the author; web applications; profile information or related links on the blog.</p>
+            <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                    <code>&lt;p&gt;Metro Exodus publishers Deep Silver get greedy and pull out of &lt;em&gt;Steam&lt;/em&gt; last minute. Leaving longtime fans angry and frustrated.&lt;/p&gt;<br>&lt;aside&gt;<br>&emsp;&lt;h4&gt;Steam&lt;/h4&gt;<br>&emsp;&lt;p&gt;Valves Gaming platform&lt;/p&gt;<br>&lt;/aside&gt;
+                    </code>
+                  </div>
+                  <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Metro Exodus publishers Deep Silver get greedy and pull out of <em>Steam</em> last minute. Leaving longtime fans angry and frustrated</p>
+                          <aside>
+                              <h4>Steam</h4>
+                              <p>Valves Gaming platform</p>
+                        </aside>
+                  </div>
+            </div>
+        </article>
+        <article id="body">
+            <h4>BODY TAG</h4>
+            <p>Main content of the document. The HTML &lt;body&gt; Element represents the content of an HTML document. There can be only one &lt;body&gt; element in a document.
+
+Attributes (modifiers)
+onafterprint | onbeforeprint | onbeforeunload | onblur | onerror | onfocus | onhashchange | onlanguagechange | onload | onmessage | onoffline | ononline | onpopstate | onredo | onresize | onstorage | onundo | onunload</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;html&gt;<br>
+                      &emsp;&lt;head&gt;<br>
+                        &emsp;&emsp;&lt;title&gt;FakeTitle&lt;/title&gt;<br>
+                      &emsp;&lt;/head&gt;<br>
+                      &emsp;&lt;body&gt;<br>
+                          &emsp;&emsp;&lt;p&gt;This is where content goes. Tables, Divs, Articles etc.&lt;/p&gt;<br>
+                      &emsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                      <html>
+                      <head>
+                        <title>FakeTitle</title>
+                      </head>
+                      <body> 
+                          <p>This is where content goes. Tables, Divs, Articles etc.</p>
+                      </body>
+                    </html>
+                      </div>
+            </div>
+        </article>
+        <article id="footer">
+            <h4>FOOTER TAG</h4>
+            <p>Footer of the current section. The HTML &lt;footer&gt; element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;footer&gt;Copyright, year, All Rights Reserved etc.&lt;/footer&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <footer>Copyright, year, All Rights Reserved etc.</footer>
+                      </div>
+            </div>
+        </article>
+        <article id="h1-h6">
+            <h4>H1 - H6 TAG</h4>
+            <p>Heading for the current section. Heading elements implement six levels of document headings, &lt;h1&gt; is the most important and &lt;h6&gt; is the least. A heading element briefly describes the topic of the section it introduces. Heading information may be used by user agents, for example, to construct a table of contents for a document automatically.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>    &lt;h1&gt;Heading level 1&lt;/h1&gt;<br>
+                                &lt;h2&gt;Heading level 2&lt;/h2&gt;<br>
+                                &lt;h3&gt;Heading level 3&lt;/h3&gt;<br>
+                                &lt;h4&gt;Heading level 4&lt;/h4&gt;<br>
+                                &lt;h5&gt;Heading level 5&lt;/h5&gt;<br>
+                                &lt;h6&gt;Heading level 6&lt;/h6&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p style="font-size: 2em;">Heading level 1</p>
+                        <p style="font-size: 1.5em">Heading level 2</p>
+                        <p style="font-size: 1.17em">Heading level 3</p>
+                        <p style="font-size: 1em">Heading level 4</p>
+                        <p style="font-size: 0.83em">Heading level 5</p>
+                        <p style="font-size: 0.67em">Heading level 6</p>
+                      </div>
+            </div>
+        </article>
+        <article id="header">
+            <h4>HEADER TAG</h4>
+            <p>Navigation or introductory elements for the current section. The HTML &lt;header&gt; element represents a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, wrapped section's header, a search form, and so on.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;header&gt;This is my header for myFakeeWebsite.com&lt;/header&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>This is my header for myFakeeWebsite.com</p>
+                      </div>
+            </div>
+        </article>
+        <article id="hgroup">
+            <h4>HGROUP TAG</h4>
+            <p>The HTML &lt;hgroup&gt; Element (HTML Headings Group Element) represents the heading of a section. It defines a single title that participates in the outline of the document as the heading of the implicit or explicit section that it belongs to. Its text for the outline algorithm is the text of the first HTML Heading Element of highest rank (i.e., the first &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; or &lt;h6&gt; with the smallest number among its descendants) and the rank is the rank of this very same HTML Heading Element. Therefore this element groups several headings, contributing only the main one to the outline of the document. It allows associating secondary titles, like subheadings, alternative titles, or even taglines, with the main heading, without polluting the outline of the document.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>    
+                             &lt;hgroup&gt;<br>
+                                  &emsp;&lt;h1&gt;Main title&lt;/h1&gt;<br>
+                                  &emsp;&lt;h2&gt;Secondary title&lt;/h2&gt;<br>
+                            &lt;/hgroup&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <hgroup>
+                              <h1>Main title</h1>
+                              <h2>Secondary title</h2>
+                          </hgroup>
+                      </div>
+            </div>
+        </article>
+        <article id="nav">
+            <h4>NAV TAG</h4>
+            <p>A section of a page that links to other pages. The HTML &lt;nav&gt; element (HTML Navigation Element) represents a section of a page that links to other pages or to parts within the page: a section with navigation links.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;nav&gt;<br>
+                        &emsp;&lt;ul&gt;<br>
+                        &emsp;&emsp;&lt;li&gt;&lt;a href="#"&gt;Take me to the top&lt;/a&gt;<br>&emsp;&emsp;&lt;/li&gt; &lt;li&gt;&lt;a href="#references&gt;Take me to References&lt;/a&gt;&lt;/li&gt;<br>&emsp;&lt;/ul&gt;<br>&lt;/nav&gt;</code>
+                      </div>
+                      
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          
+                              <ul> 
+                                <li><a href="#">Take me to the top</a></li> <li><a href="#references">Take me to References</a></li>
+                             </ul>
+                        
+                      </div>
+            </div>
+        </article>
+        <article id="section">
+            <h4>SECTION TAG</h4>
+            <p>Contains of elements grouped by theme, for example a chapter or tab box. The HTML &lt;section&gt; element represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading. Each &lt;section&gt; should be identified, typically by including a heading (&lt;h1&gt;-&lt;h6&gt; element) as a child of the &lt;section&gt; element.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;section&gt;<br>&emsp;&lt;h1&gt;Awesome Heading&lt;/h1&gt;<br>&emsp;&lt;p&gt;A whole load of great content&lt;/p&gt;<br>&lt;/section&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <section>
+                             <h1>Awesome Heading</h1>
+                             <p>A whole load of great content</p>
+                        </section>
+                      </div>
+            </div>
+        </article>
+        <article id="blockquote">
+            <h4>BLOCKQUOTE TAG</h4>
+            <p>Quote from another source. The HTML &lt;blockquote&gt; Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the &lt;cite&gt; element.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;blockquote cite= "https://www.brainyquote.com"&gt;&lt;p&gt;Ideas shape the course of history.
+Read more at: https://www.brainyquote.com&lt;/p&gt;&lt;/blockquote&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <blockquote cite="https://www.brainyquote.com"><p>Ideas shape the course of history.
+Read more at: https://www.brainyquote.com</p></blockquote>
+                      </div>
+            </div>
+        </article>
+    </section>
+    <!--------------------------------------------------------------GROUPING----------------------------------------------------------------->
+    <section class="main-section" id="content_grouping_html_elements">
+        <header><h3>Content Grouping HTML Elements</h3></header>
+        <article id="br">
+            <h4>BR TAG</h4>
+            <p>Line break. The HTML element line break &lt;br&gt; produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. Do not use &lt;br&gt; to increase the gap between lines of text; use the CSS margin property or the &lt;p&gt; element.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;My free code camp taught me how to put THIS&lt;br&gt;and THIS&lt;br&gt;on different lines&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p><p>My free code camp taught me how to put THIS<br>and THIS<br>on different lines</p></p>
+                      </div>
+            </div>
+        </article>
+        <article id="dd">
+            <h4>DD TAG</h4>
+            <p>Description, definition, or value, part of a term- description group in a description list. The HTML &lt;dd&gt; element (HTML Description Element) indicates the description of a term in a description list (&lt;dl&gt;) element. This element can occur only as a child element of a description list and it must follow a &lt;dt&gt; element.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;dl&gt;
+  &lt;dt&gt;Freecodecamp.com&lt;/dt&gt;
+  &lt;dd&gt;Clear, practical methods of learning how to develop websites&lt;/dd&gt;
+&lt;/dl&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p><dl> <dt>Freecodecamp.com</dt> <dd>Clear, practical methods of learning how to develop websites</dd> </dl></p>
+                      </div>
+            </div>
+        </article>
+        <article id="div">
+            <h4>DIV TAG</h4>
+            <p>div or section with no semantic meaning. The HTML &lt;div&gt; element (or HTML Document Division Element) is the generic div for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as &lt;article&gt; or &lt;nav&gt;) is appropriate.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;div&gt;<br>&lt;p&gt;Any kind of content in here. Such as this paragraph or maybe a&lt;/p&gt;<br>&lt;h1&gt;HEADING?&lt;/h1&gt;<br> or even a &lt;button&gt;BUTTON&lt;/button&gt; &lt;label&gt;You name it!&lt;/label&gt;&lt;/div&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p><div><p>Any kind of content in here. Such as this paragraph or maybe a</p> <h1>HEADING?</h1> or even a <button>BUTTON</button> <label>You name it!</label></div></p>
+                      </div>
+            </div>
+        </article>
+        <article id="dl">
+            <h4>DL TAG</h4>
+            <p>An association list consisting of zero or more name-value groups (a description list). The HTML &lt;dl&gt; element (or HTML Description List Element) encloses a list of pairs of terms and descriptions. Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs). Prior to HTML5, &lt;dl&gt; was known as a Definition List.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;dl&gt;
+  &lt;dt&gt;freecodecamp.com&lt;/dt&gt;
+  &lt;dd&gt;Just look at this wonderful glossary&lt;/dd&gt;
+&lt;/dl&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <dl> <dt>freecodecamp.com</dt> <dd>Just look at this wonderful glossary</dd> </dl>
+                      </div>
+            </div>
+        </article>
+        <article id="dt">
+            <h4>DT TAG</h4>
+            <p>Term, or name, part of a term-description group in a description list. The HTML &lt;dt&gt; element (or HTML Definition Term Element) identifies a term in a definition list. This element can occur only as a child element of a &lt;dl&gt;. It is usually followed by a &lt;dd&gt; element; however, multiple &lt;dt&gt; elements in a row indicate several terms that are all defined by the immediate next &lt;dd&gt; element.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;dl&gt;
+  &lt;dt&gt;google.com&lt;/dt&gt;
+  &lt;dd&gt;Not just a search engine.&lt;/dd&gt;
+&lt;/dl&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <dl> <dt>google.com</dt> <dd>Not just a search engine.</dd> </dl>
+                      </div>
+            </div>
+        </article>
+        <article id="figcaption">
+            <h4>FIGCAPTION TAG</h4>
+            <p>Caption or legend for the figure element. The HTML &lt;figcaption&gt; element represents a caption or a legend associated with a figure or an illustration described by the rest of the data of the &lt;figure&gt; element which is its immediate ancestor which means &lt;figcaption&gt; can be the first or last element inside a &lt;figure&gt; block. Also, the HTML Figcaption Element is optional; if not provided, then the parent figure element will have no caption.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;figure&gt;
+  &lt;img src="https://farm8.staticflickr.com/7862/46253589925_7eeb3097c1_o.jpg" alt="An awesome picture"&gt; 
+  &lt;figcaption&gt;Wow, such creativity. Artist: Josh(butters)&lt;/figcaption&gt;
+&lt;/figure&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <figure> <img src="https://farm8.staticflickr.com/7862/46253589925_7eeb3097c1_o.jpg"> <figcaption>Wow, such creativity. Artist: Josh(butters)</figcaption> </figure>
+                      </div>
+            </div>
+        </article>
+        <article id="figure">
+            <h4>FIGURE TAG</h4>
+            <p>Contains elements related to single concept, such as an illustration or code example. The HTML &lt;figure&gt; element represents self-contained content, frequently with a caption (&lt;figcaption&gt;), and is typically referenced as a single unit. While it is related to the main flow, its position is independent of the main flow. Usually this is an image, an illustration, a diagram, a code snippet, or a schema that is referenced in the main text, but that can be moved to another page or to an appendix without affecting the main flow.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;figure&gt;
+  &lt;img src="https://farm8.staticflickr.com/7896/32225837337_3f09739c71_o.jpg" alt="An awesome picture"&gt; 
+  &lt;figcaption&gt;Again? Just WOW. Such originality! Artist: Josh(butters)&lt;/figcaption&gt;
+&lt;/figure&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <figure> <img src="https://farm8.staticflickr.com/7896/32225837337_3f09739c71_o.jpg"> <figcaption>Again? Just WOW. Such originality! Artist: Josh(butters)</figcaption> </figure>
+                      </div>
+            </div>
+        </article>
+        <article id="hr">
+            <h4>HR TAG</h4>
+            <p>Paragraph-level thematic break. The HTML &lt;hr&gt; element represents a thematic break between paragraph-level elements (for example, a change of scene in a story, or a shift of topic with a section). In previous versions of HTML, it represented a horizontal rule. It may still be displayed as a horizontal rule in visual browsers, but is now defined in semantic terms, rather than presentational terms.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;Just picture a really long paragraph here.&lt;/p&gt;&lt;hr&gt;&lt;p&gt;Then here. Lazy? I know.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Just picture a really long paragraph here.</p><hr><p>Then here. Lazy? I know.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="li">
+            <h4>LI TAG</h4>
+            <p>List item. The HTML &lt;li&gt; element (or HTML List Item Element) is used to represent an item in a list. It must be contained in a parent element: an ordered list (&lt;ol&gt;), an unordered list (&lt;ul&gt;), or a menu (&lt;menu&gt;). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;ol&gt;<br>
+                                  &lt;li&gt;Milk&lt;/li&gt;<br>
+                                  &lt;li&gt;Bread&lt;/li&gt;<br>
+                                  &lt;li&gt;GTX 2080i&lt;/li&gt;<br>
+                                  &lt;li&gt;Friends&lt;/li&gt;<br>
+                                  &lt;li&gt;Add as many as you want/need&lt;/li&gt;<br>
+                                &lt;/ol&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                          <h5>Code Output</h5>
+                          <ol>
+                            <li>Milk</li>
+                            <li>Bread</li>
+                            <li>GTX 2080i</li>
+                            <li>Friends</li>
+                            <li>Add as many as you want/need</li>
+                        </ol>
+                      </div>
+            </div>
+        </article>
+        <article id="main">
+            <h4>MAIN TAG</h4>
+            <p>Specifies the main content area of an HTML document. The HTML &lt;main&gt; element represents the main content of the &lt;body&gt; of a document or application. The main content area consists of content that is directly related to, or expands upon the central topic of a document or the central functionality of an application. This content should be unique to the document, excluding any content that is repeated across a set of documents such as sidebars, navigation links, copyright information, site logos, and search forms (unless the document's main function is as a search form).</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;main&gt;
+  &lt;h1&gt;Anything&lt;/h1&gt;
+  &lt;p&gt;Something about anything.&lt;/p&gt;
+  &lt;article&gt;
+  &lt;p&gt;Something about anything which means nothing at all.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          
+                              <h1>Anything</h1>
+                               <p>Something about anything.</p>
+                               
+                                <p>Something about anything which means nothing at all.</p>
+                               
+                          
+                      </div>
+            </div>
+        </article>
+        <article id="ol">
+            <h4>OL TAG</h4>
+            <p>Ordered list. The HTML &lt;ol&gt; Element (or HTML Ordered List Element) represents an ordered list of items. Typically, ordered-list items are displayed with a preceding numbering, which can be of any form, like numerals, letters or Romans numerals or even simple bullets. This numbered style is not defined in the HTML description of the page, but in its associated CSS, using the list-style-type property. There is no limitation to the depth and overlap of lists defined with the &lt;ol&gt; and &lt;ul&gt; elements.
+
+Attributes (modifiers)
+start | reversed | type</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;ol&gt;<br>
+                                  &lt;li&gt;Finish this website&lt;/li&gt;<br>
+                                  &lt;li&gt;Make coffee&lt;/li&gt;<br>
+                                  &lt;li&gt;Love my lady&lt;/li&gt;<br>
+                                  &lt;li&gt;Play Metro Exodus&lt;/li&gt;<br>
+                                &lt;/ol&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <ol> 
+                              <li>Finish this website</li>
+                              <li>Make coffee</li>
+                              <li>Love my lady</li>
+                             <li>Play Metro Exodus</li>
+                        </ol>
+                      </div>
+            </div>
+        </article>
+        <article id="p">
+            <h4>P TAG</h4>
+            <p>Paragraph content. The HTML &lt;p&gt; element (or HTML Paragraph Element) represents a paragraph of text. Paragraphs are usually represented in visual media as blocks of text that are separated from adjacent blocks by vertical blank space and/or first-line indentation. Paragraphs are block-level elements.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;Writing 200 word paragraphs are easy they said.&lt;/p&gt;<br>&lt;p&gt;As easy as pie.&lt;/p&gt;<br>&lt;p&gt;Can you make pie? I can't.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Writing 200 word paragraphs are easy they said.</p>
+                        <p>As easy as pie.</p>
+                        <p>Can you make pie? I can't.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="pre">
+            <h4>PRE TAG</h4>
+            <p>A block of preformatted text. The HTML &lt;pre&gt; element (or HTML Preformatted Text) represents preformatted text. Text within this element is typically displayed in a non-proportional ("monospace") font exactly as it is laid out in the file. Whitespace inside this element is displayed as typed.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;pre&gt;Text in a pre element<br>
+is displayed in a fixed-width<br>
+font, and it preserves<br>
+both&emsp;&emsp;&emsp;spaces and<br>
+line breaks&lt;/pre&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <pre>Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+                      </div>
+            </div>
+        </article>
+        <article id="ul">
+            <h4>UL TAG</h4>
+            <p>
+Unordered list. The HTML &lt;ul&gt; element (or HTML Unordered List Element) represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless. Typically, unordered-list items are displayed with a bullet, which can be of several forms, like a dot, a circle or a squared. The bullet style is not defined in the HTML description of the page, but in its associated CSS, using the list-style-type property.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>    &lt;ul&gt;<br>
+                                      &emsp;&lt;li&gt;Antibiotic pill&lt;/li&gt;<br>
+                                      &emsp;&lt;li&gt;Sinus pill&lt;/li&gt;<br>
+                                      &emsp;&lt;li&gt;Flu pill&lt;/li&gt;<br>
+                                &lt;/ul&gt;<br>
+                                &lt;p&gt;Doesn't matter in which order, just take all 3, twice a day. And don't breath on me.&lt;/p&gt;
+                                </code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <ul>
+                          <li>Anti biotic pill</li>
+                          <li>Sinus pill</li>
+                          <li>Flu pill</li>
+                         </ul>
+ <p>Doesn't matter in which order, just take all 3, twice a day. And don't breath on me.</p>
+
+                      </div>
+            </div>
+        </article>
+    </section>
+    <!---------------------------------------------------------TEXT LEVEL SEMANTICS---------------------------------------------------------->
+    <section class="main-section" id="text_level_semantic_html_elements">
+        <header><h3>Text Level Semantic HTML Elements</h3></header>
+        <article id="a">
+            <h4>A TAG</h4>
+            <p>Hyperlink (a hypertext anchor). The HTML Anchor Element (&lt;a&gt; tag) defines a hyperlink to a location on the same domain. It can also be used to create an anchor point - a destination for hyperlinks within the content of a page, so that links aren't limited to connecting simply to the top of a page.
+
+Attributes (modifiers)
+href | hreflang | media | rel | target (_self | _blank | _parent | _top) | type | download | ping | referrerpolicy</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <a href="https://google.com" target="_blank" style="color: cadetblue">Google</a>
+                      </div>
+            </div>
+        </article>
+        <article id="abbr">
+            <h4>ABBR TAG</h4>
+            <p>Abbreviation or acronym. The &lt;abbr&gt; element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it. If present, the title attribute must contain this full description and nothing else.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;This is  &lt;abbr title="Hyper Text Markup Language"&gt;HTML&lt;/abbr&gt;&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>This is <abbr title="Hyper Text Markup Language">HTML</abbr></p>
+                      </div>
+            </div>
+        </article>
+        <article id="b">
+            <h4>B TAG</h4>
+            <p>Stylistically separated text of equal importance, such as a product name. The HTML &lt;b&gt; Element represents a span of text stylistically different from normal text, without conveying any special importance or relevance. It is typically used for keywords in a summary, product names in a review, or other spans of text whose typical presentation would be boldfaced. Another example of its use is to mark the lead sentence of each paragraph of an article.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;&lt;b&gt;Friday&lt;/b&gt; is definetely a feel good day.&lt;br&gt; The best thing about &lt;b&gt;HTML&lt;/b&gt; is how easy it can be understood.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p><b>Friday</b> is definetely a feel good day.<br> The best thing about <b>HTML</b> is how easy it can be understood. </p>
+                      </div>
+            </div>
+        </article>
+        <article id="bdi">
+            <h4>BDI TAG</h4>
+            <p>The &lt;bdi&gt; tag isolates a part of text that might be formatted in a different direction from other text outside it. This element is useful when embedding user-generated content with an unknown directionality.
+
+Attributes (modifiers)
+dir</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;This arabic word &lt;bdi&gt;------إيان******&lt;/bdi&gt; is automatically displayed right-to-left.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p dir="ltr">This arabic word <bdi>------إيان******</bdi> is automatically displayed right-to-left.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="bdo">
+            <h4>BDO TAG</h4>
+            <p>Defines directional formatting for content. The HTML &lt;bdo&gt; Element (or HTML bidirectional override element) is used to override the current directionality of text. It causes the directionality of the characters to be ignored in favor of the specified directionality.
+
+Attributes (modifiers)
+dir</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;&lt;bdo dir="rtl"&gt;It almost feels like rewinding time.&lt;/bdo&gt;&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p><bdo dir="rtl">It almost feels like rewinding time.</bdo></p>
+                      </div>
+            </div>
+        </article>
+        <article id="cite">
+            <h4>CITE TAG</h4>
+            <p>The &ltr;cite&gt; tag defines the title of a work (e.g. a book, a song, a movie, a TV show, a painting, a sculpture, etc.).</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;img src="https://farm8.staticflickr.com/7811/47117157982_887ec052cd_o.jpg" alt="Burning Love"&gt;&lt;p&gt;&lt;cite&gt;Burning Love&lt;/cite&gt; by Cherees Rademeyer. Painted in 2019.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <img src="https://farm8.staticflickr.com/7811/47117157982_887ec052cd_o.jpg" alt="Burning Love">
+                        <p><cite>Burning Love</cite> by Cherees Rademeyer. Painted in 2019.</p>
+                    </div>
+                </div>
+        </article>
+        <article id="code">
+            <h4>CODE TAG</h4>
+            <p>Fragment of computer code. The HTML Code Element (&lt;code&gt;) represents a fragment of computer code. By default, it is displayed in the browser's default monospace font.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;em&gt;This text is different to&lt;/em&gt;&lt;strong&gt; this text but&lt;/strong&gt; &lt;var&gt;when we&lt;/var&gt; use code elements it &lt;code&gt;looks like this&lt;/code&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                        <p><em>This text is different to</em><strong> this text but</strong> <var>when we</var> use code elements it <code>looks like this</code></p>
+                      </div>
+            </div>
+        </article>
+        <article id="del">
+            <h4>DEL TAG</h4>
+            <p>Text that has been removed during document editing. The HTML Deleted Text Element (&lt;del&gt;) represents a range of text that has been deleted from a document. This element is often (but need not be) rendered with strike-through text.
+
+Attributes (modifiers)
+cite | datetime</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;&lt;del&gt;This text has been deleted&lt;/del&gt;, here is the rest of the paragraph.&lt;/p&gt;&lt;del&gt;&lt;p&gt;Something the CIA would do to sensitive documents, if they were noobs. Totally still readable.&lt;/p&gt;&lt;/del&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p><del>This text has been deleted</del>, here is the rest of the paragraph.</p><del><p>Something the CIA would do to sensitive documents, if they were noobs. Totally still readable.</p></del>
+                      </div>
+            </div>
+        </article>
+        <article id="dfn">
+            <h4>DFN TAG</h4>
+            <p>Defining instance of a term. The HTML Definition Element (&lt;dfn&gt;) represents the defining instance of a term.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;Love&lt;/dfn&gt; is an intense feeling of deep affection.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p><dfn>Love</dfn> is an intense feeling of deep affection.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="em">
+            <h4>EM TAG</h4>
+            <p>Text that should be emphasized. The HTML element emphasis &lt;em&gt; marks text that has stress emphasis. The &lt;em&gt; element can be nested, with each level of nesting indicating a greater degree of emphasis.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;code&gt;This text is different to&lt;/code&gt;&lt;strong&gt; this text but&lt;/strong&gt; &lt;var&gt;when we&lt;/var&gt; use em elements it &lt;em&gt;looks like this&lt;/em&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p><code>This text is different to</code><strong> this text but</strong> <var>when we</var> use em elements it <em>looks like this</em></p>
+                      </div>
+            </div>
+        </article>
+        <article id="i">
+            <h4>I TAG</h4>
+            <p>Text in a alternate voice or mood, such as a technical term. The HTML &lt;i&gt; Element represents a range of text that is set off from the normal text for some reason, for example, technical terms, foreign language phrases, or fictional character thoughts. It is typically displayed in italic type.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;He named his yacht &lt;i&gt;Titanic&lt;/i&gt; because it constantly leaked.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>He named his yacht <i>Titanic</i> because it constantly leaked.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="ins">
+            <h4>INS TAG</h4>
+            <p>Text that has been inserted during document editing. The HTML &lt;ins&gt; Element (or HTML Inserted Text) HTML represents a range of text that has been added to a document.
+
+Attributes (modifiers)
+cite | datetime</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;I need &lt;del&gt;coffee&lt;/del&gt; &lt;ins&gt;a Red Bull&lt;/ins&gt;!&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>I need <del>coffee</del> <ins>a Red Bull</ins>!</p>
+                      </div>
+            </div>
+        </article>
+        <article id="kbd">
+            <h4>KBD TAG</h4>
+            <p>Example input (usually keyboard) for a program. The HTML Keyboard Input Element (&lt;kbd&gt;) represents user input and produces an inline element displayed in the browser's default monospace font.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;In Fortnite, activate God Mode by pressing &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;F4&lt;/kbd&gt;&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>In Fortnite, activate God Mode by pressing <kbd>Alt</kbd> + <kbd>F4</kbd></p>
+                      </div>
+            </div>
+        </article>
+        <article id="mark">
+            <h4>MARK TAG</h4>
+            <p>Text highlighted for referencing elsewhere. The HTML Mark Element (&lt;mark&gt;) represents highlighted text, i.e., a run of text marked for reference purpose, due to its relevance in a particular context. For example it can be used in a page showing search results to highlight every instance of the searched-for word.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;Don't forget to buy milk this time. If I have one more cuppa black coffee I'll go mentally insane! &lt;mark&gt;GET SOME MILK&lt;/mark&gt;!!&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Don't forget to buy milk this time. If I have one more cuppa black coffee I'll go mentally insane! <mark>GET SOME MILK</mark>!!</p>
+                      </div>
+            </div>
+        </article>
+        <article id="q">
+            <h4>Q TAG</h4>
+            <p>Phrasing content quoted from another source. The HTML Quote Element (&lt;q&gt;) indicates that the enclosed text is a short inline quotation. This element is intended for short quotations that don't require paragraph breaks; for long quotations use &lt;blockquote&gt; element.
+
+Attributes (modifiers)
+cite</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;Everytime Jon Snow thought he knew something, Ygritte would turn to him and say &lt;q cite="https://www.youtube.com/watch?v=Pkyy57iMaB0"&gt;You know nothing, Jon Snow&lt;/q&gt;.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Everytime Jon Snow thought he knew something, Ygritte would turn to him and say <q cite="https://www.youtube.com/watch?v=Pkyy57iMaB0">You know nothing, Jon Snow </q>. </p>
+                      </div>
+            </div>
+        </article>
+        <article id="rp">
+            <h4>RP TAG</h4>
+            <p>Contains semantically meaningless markup for browsers that don't understand ruby annotations. The HTML &lt;rp&gt; element is used to provide fall-back parenthesis for browsers non-supporting ruby annotations. Ruby annotations are for showing pronunciation of East Asian characters, like using Japanese furigana or Taiwainese bopomofo characters. The &lt;rp&gt; element is used in the case of lack of &lt;ruby&gt; element support its content has what should be displayed in order to indicate the presence of a ruby annotation, usually parentheses.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;ruby&gt; 漢 &lt;rt&gt;&lt;rp&gt;(&lt;/rp&gt;ㄏㄢˋ&lt;rp&gt;)&lt;/rp&gt;&lt;/rt&gt; &lt;/ruby&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <ruby> 漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt> </ruby>
+                      </div>
+            </div>
+        </article>
+        <article id="rt">
+            <h4>RT TAG</h4>
+            <p>Annotation of preceding text. The HTML &lt;rt&gt; Element embraces pronunciation of characters presented in a ruby annotations, which are used to describe the pronunciation of East Asian characters. This element is always used inside a &lt;ruby&gt; element.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;ruby&gt;
+  漢 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+  字 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ji&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+&lt;/ruby&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <ruby> 漢 <rp>(</rp><rt>Kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp> </ruby>
+                      </div>
+            </div>
+        </article>
+        <article id="ruby">
+            <h4>RUBY TAG</h4>
+            <p>Contains text with annotations, such as pronunciation hints. Commonly used in East Asian text. The HTML &lt;ruby&gt; Element represents a ruby annotation. Ruby annotations are for showing pronunciation of East Asian characters.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;ruby&gt;
+  漢 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+  字 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ji&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+&lt;/ruby&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <ruby> 漢 <rp>(</rp><rt>Kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp> </ruby>
+                      </div>
+            </div>
+        </article>
+        <article id="s">
+            <h4>S TAG</h4>
+            <p>Strikethrough text that is outdated or no longer accurate. The HTML Strikethrough Element (&lt;s&gt;) renders text with a strikethrough, or a line through it. Use the &lt;s&gt; element to represent things that are no longer relevant or no longer accurate. However, &lt;s&gt; is not appropriate when indicating document edits; for that, use the &lt;del&gt; and &lt;ins&gt; elements, as appropriate.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;Lightning is &lt;s&gt;cool&lt;/s&gt; hotter than the surface of the sun.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Lightning is <s>cool</s> hotter than the surface of the sun.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="samp">
+            <h4>SAMP TAG</h4>
+            <p>Sample output of a program. The HTML &lt;samp&gt; element is an element intended to identify sample output from a computer program. It is usually displayed in the browser's default monotype font (such as Lucida Console).</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;Regular text. &lt;samp&gt;This is sample text.&lt;/samp&gt; Regular text.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Regular text. <samp>This is sample text.</samp> Regular text.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="small">
+            <h4>SMALL TAG</h4>
+            <p>Small text, such as fine print. The HTML Small Element (&lt;small&gt;) makes the text font size one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size. In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text, independent of its styled presentation.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;Wow, the world is so big. (go to grocery store) &lt;small&gt;It's a small world afterall.&lt;/small&gt;&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Wow, the world is so big. (go to grocery store) <small>It's a small world afterall.</small></p>
+                      </div>
+            </div>
+        </article>
+        <article id="span">
+            <h4>SPAN TAG</h4>
+            <p>div with no semantic meaning. The HTML &lt;span&gt; element is a generic inline div for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. &lt;span&gt; is very much like a &lt;div&gt; element, but &lt;div&gt; is a block-level element whereas a &lt;span&gt; is an inline element.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;<br>&emsp;&lt;span&gt;<br>&emsp;&emsp;SPAN, not spam<br>&emsp;&lt;/span&gt;<br>&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p><span>SPAN, not spam</span></p>
+                      </div>
+            </div>
+        </article>
+        <article id="strong">
+            <h4>STRONG TAG</h4>
+            <p>Text that is important. The HTML Strong Element (&lt;strong&gt;) gives text strong importance, and is typically displayed in bold.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>
+                     <code>            
+                         &lt;p&gt;For all epic store haters, we have good news. &lt;strong&gt;Metro Exodus&lt;/strong&gt; is available to everyone world wide. Thanks to &lt;strong&gt;CPY&lt;/strong&gt;.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                           <p>For all epic store haters, we have good news. <strong>Metro Exodus</strong> is available to everyone world wide. Thanks to <strong>CPY</strong>.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="sub">
+            <h4>SUB TAG</h4>
+            <p>Subscript text. The HTML Subscript Element (&lt;sub&gt;) defines a span of text that should be displayed, for typographic reasons, lower, and often smaller, than the main span of text.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;The chemical formula of water is H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>The chemical formula of water is H<sub>2</sub>O</p>
+                      </div>
+            </div>
+        </article>
+        <article id="sup">
+            <h4>SUP TAG</h4>
+            <p>Superscript text. The HTML Superscript Element (&lt;sup&gt;) defines a span of text that should be displayed, for typographic reasons, higher, and often smaller, than the main span of text.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;This text is &lt;sup&gt;superscripted&lt;/sup&gt;&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>This text is <sup>superscripted</sup></p>
+                      </div>
+            </div>
+        </article>
+        <article id="time">
+            <h4>TIME TAG</h4>
+            <p>Time defined in a machine readable format. The HTML &lt;time&gt; element represents either a time on a 24-hour clock or a precise date in the Gregorian calendar (with optional time and timezone information). This element is intended to be used presenting dates and times in a machine readable format. This can be helpful for user agents to offer any event scheduling for user's calendar.
+
+Attributes (modifiers)
+datetime</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;I've been coding this website since &lt;time&gt;20:00&lt;/time&gt; and now it's &lt;time&gt;03:00&lt;/time&gt;.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>I've been coding this website since <time>20:00</time> and now it's <time>03:00</time>.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="var">
+            <h4>VAR TAG</h4>
+            <p>Mathematical or programming variable. The HTML Variable Element (&lt;var&gt;) represents a variable in a mathematical expression or a programming context.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt; Solve this equation: 7&lt;var&gt;y&lt;/var&gt; + 2&lt;var&gt;x&lt;/var&gt; = -23 &lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p> Solve this equation: 7<var>y</var> + 2<var>x</var> = -23 </p>
+                      </div>
+            </div>
+        </article>
+        <article id="wbr">
+            <h4>WBR TAG</h4>
+            <p>Opportunity for a line break. The HTML element word break opportunity &lt;wbr&gt; represents a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                    <code>&lt;p&gt;https://www.google.com/search?<u>&lt;wbr&gt;</u><br>sa=G&amp;hl=en-ZA&amp;tbs=simg:CAESqQIJR-<u>&lt;wbr&gt;</u><br>zKh0LSR5sanQILEKjU2AQaAggVDAsQsIynCBp<u>&lt;wbr&gt;</u><br>iCmAIAxIo4RqWHOIalxyUHNYZ0hmRHLM<u>&lt;wbr&gt;</u><br>P3BCYOqk7ijqoMIk6qzvDL5Mtqju8LxowXJoPqiYUH-<u>&lt;wbr&gt;</u><br>fVPpwTNWKEFiiWeYDG1SUtSaRmD2b<u>&lt;wbr&gt;</u><br>P90d9fnc8fZi8CGx5HojFhS8YIAQM<u>&lt;wbr&gt;</u><br>CxCOrv4IGgoKCAgBEgQpbiyfDAsQne3BCRqKAQo<u>&lt;wbr&gt;</u><br>XCgRnaXJs2qWI9gMLCgkvbS8wNXI2<br>NTUKGAoFYmxvbmTapYj2AwsKC<u>&lt;wbr&gt;</u>S9tLzAyOTRqYgoZC<br>gV3b21hbtqliP<u>&lt;wbr&gt;</u><br>YDDAoKL20vMDNidDF<u>&lt;wbr&gt;</u>2ZgofCgxjYXN1Y<br>WwgZHJlc3PapYj2AwsKCS9tLzA2eGd6bgoZCgZz<u>&lt;wbr&gt;</u><br>aG9ydHPapYj2AwsKCS9tLzAxYmZtOQw&amp;q=tit+in+a+wringer&amp;<br>tb<u>&lt;wbr&gt;</u>m=isch&amp;ved=2ahUKEwiXhYm-687gAhVFgM4BHWgVBxAQsw56BAgGEA<u>&lt;wbr&gt;</u><br>E&amp;biw=1536&amp;bih=722#imgrc=3Xu0eerP1tpUFM: &lt;br&gt;&lt;br&gt;
+  
+                          -Woah, google has long links. Go ahead, check it out&lt;/p&gt;</code>
+                      </div>
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>https://www.google.com/search?<wbr/>sa=G&amp;hl=en-ZA&amp;tbs=simg:CAESqQIJR-<wbr/>zKh0LSR5sanQILEKjU2AQaAggVDAsQsIynCBp<wbr/>iCmAIAxIo4RqWHOIalxyUHNYZ0hmRHLM<wbr/>P3BCYOqk7ijqoMIk6qzvDL5Mtqju8LxowXJoPqiYUH-<wbr/>fVPpwTNWKEFiiWeYDG1SUtSaRmD2b<wbr/>P90d9fnc8fZi8CGx5HojFhS8YIAQM<wbr/>CxCOrv4IGgoKCAgBEgQpbiyfDAsQne3BCRqKAQo<wbr/>XCgRnaXJs2qWI9gMLCgkvbS8wNXI2NTUKGAoFYmxvbmTap<br>Yj2AwsKC<wbr/>S9tLzAyOTRqYgoZCgV3b21hbtqliP<wbr/>YDDAoKL20vMDNidDF<wbr/>2ZgofCgxjYXN1YWwgZHJlc3PapYj2AwsKCS9t<br/>LzA2eGd6bgoZCgZz<wbr/>aG9ydHPapYj2AwsKCS9tLzAxYmZtOQw&amp;<br>q=tit+in+a+wringer&amp;tb<wbr/>m=isch&amp;ved=2ahUKEwiXhYm-687gAhVFgM4BHWgVBxAQsw56BAgGEA<wbr/>E&amp;biw=1536&amp;bih=722#imgrc=3Xu0eerP1tpUFM:<br><br>
+  
+                          -Woah, google has long links. Go ahead, check it out</p>
+                      </div>
+            </div>
+        </article>
+    </section>
+    <!---------------------------------------------------------------TABLE------------------------------------------------------------------->
+    <section class="main-section" id="table_html_elements">
+    <header><h3>Table HTML Elements</h3></header>
+        <article id="caption">
+            <h4>CAPTION TAG</h4>
+            <p>Title of a table. The HTML &lt;caption&gt; Element (or HTML Table Caption Element) represents the title of a table. Though it is always the first descendant of a &lt;table&gt;, its styling, using CSS, may place it elsewhere, relative to the table.</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;&lt;caption&gt;Saving table&lt;/caption&gt;&lt;tr&gt;&lt;th&gt;Month&lt;/th&gt;&lt;th&gt;Savings&lt;/th&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td&gt;January&lt;/td&gt;&lt;td&gt;-$100&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;February&lt;/td&gt;&lt;td&gt;$20&lt;/td&gt;
+                        &lt;/tr&gt;&lt;/table&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <table> <caption>Savings table</caption> <tr> <th>Month</th> <th>Savings</th> </tr> <tr> <td>January</td> <td>-$100</td> </tr> <tr> <td>February</td> <td>$20</td> </tr> </table>
+                      </div>
+            </div>
+        </article>
+        <article id="col">
+            <h4>COL TAG</h4>
+            <p>Columns in a table. The HTML Table Column Element (&lt;col&gt;) defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a &lt;colgroup&gt; element.
+
+Attributes (modifiers)
+                span + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;<br>
+                            &emsp;&lt;colgroup&gt;<br>
+                                &emsp;&emsp;&lt;col span="2" style="background-color:red"&gt;<br>
+                                &emsp;&emsp;&lt;col style="background-color:forestgreen"&gt;<br>
+                              &emsp;&lt;/colgroup&gt;<br>
+                              &emsp;&lt;tr&gt;<br>
+                                &emsp;&emsp;&lt;th&gt;Site #&lt;/th&gt;<br>
+                                &emsp;&emsp;&lt;th&gt;Title&lt;/th&gt;<br>
+                                &emsp;&emsp;&lt;th&gt;Price&lt;/th&gt;<br>
+                              &emsp;&lt;/tr&gt;<br>
+                              &emsp;&lt;tr&gt;<br>
+                                &emsp;&emsp;&lt;td&gt;0004&lt;/td&gt;<br>
+                                &emsp;&emsp;&lt;td&gt;html cheat sheet&lt;/td&gt;<br>
+                                &emsp;&emsp;&lt;td&gt;$0&lt;/td&gt;<br>
+                              &emsp;&lt;/tr&gt;<br>
+                        &lt;/table&gt;
+                    </code>
+                  </div>
+                      
+                  
+                  <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <table>
+                              <colgroup>
+                                 <col span="2" style="background-color:red">
+                                <col style="background-color:forestgreen">
+                              </colgroup>
+                              <tr>
+                                    <th>Site #</th>
+                                    <th>Title</th>
+                                    <th>Price</th>
+                              </tr>
+                              <tr>
+                                    <td>0004</td>
+                                   <td>html cheat sheet</td>
+                                     <td>$0</td>
+                               </tr>
+                        </table>
+                      </div>
+                </div>
+        </article>
+        <article id="colgroup">
+            <h4>COLGROUP TAG</h4>
+            <p>Defines a group of columns in a table. The HTML Table Column Group Element (&lt;colgroup&gt;) defines a group of columns within a table.
+
+Attributes (modifiers)
+span + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;<br>
+                            &emsp;&lt;colgroup&gt;<br>
+                                &emsp;&emsp;&lt;col span="2" style="background-color:red"&gt;<br>
+                                &emsp;&emsp;&lt;col style="background-color:forestgreen"&gt;<br>
+                              &emsp;&lt;/colgroup&gt;<br>
+                              &emsp;&lt;tr&gt;<br>
+                                &emsp;&emsp;&lt;th&gt;Site #&lt;/th&gt;<br>
+                                &emsp;&emsp;&lt;th&gt;Title&lt;/th&gt;<br>
+                                &emsp;&emsp;&lt;th&gt;Price&lt;/th&gt;<br>
+                              &emsp;&lt;/tr&gt;<br>
+                              &emsp;&lt;tr&gt;<br>
+                                &emsp;&emsp;&lt;td&gt;0004&lt;/td&gt;<br>
+                                &emsp;&emsp;&lt;td&gt;html cheat sheet&lt;/td&gt;<br>
+                                &emsp;&emsp;&lt;td&gt;$0&lt;/td&gt;<br>
+                              &emsp;&lt;/tr&gt;<br>
+                        &lt;/table&gt;
+                    </code>
+                  </div>
+                      
+                  
+                  <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <table>
+                              <colgroup>
+                                 <col span="2" style="background-color:red">
+                                <col style="background-color:forestgreen">
+                              </colgroup>
+                              <tr>
+                                    <th>Site #</th>
+                                    <th>Title</th>
+                                    <th>Price</th>
+                              </tr>
+                              <tr>
+                                    <td>0004</td>
+                                   <td>html cheat sheet</td>
+                                     <td>$0</td>
+                               </tr>
+                        </table>
+                      </div>
+                </div>
+        </article>
+        <article id="table">
+            <h4>TABLE TAG</h4>
+            <p>Table of multi-dimensional data. The HTML Table Element (&lt;table&gt;) represents tabular data: information expressed via two dimensions or more.
+
+Attributes (modifiers)
+summary + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;<br>
+                            &emsp;&lt;colgroup&gt;<br>
+                                &emsp;&emsp;&lt;col span="2" style="background-color:red"&gt;<br>
+                                &emsp;&emsp;&lt;col style="background-color:forestgreen"&gt;<br>
+                              &emsp;&lt;/colgroup&gt;<br>
+                              &emsp;&lt;tr&gt;<br>
+                                &emsp;&emsp;&lt;th&gt;Site #&lt;/th&gt;<br>
+                                &emsp;&emsp;&lt;th&gt;Title&lt;/th&gt;<br>
+                                &emsp;&emsp;&lt;th&gt;Price&lt;/th&gt;<br>
+                              &emsp;&lt;/tr&gt;<br>
+                              &emsp;&lt;tr&gt;<br>
+                                &emsp;&emsp;&lt;td&gt;0004&lt;/td&gt;<br>
+                                &emsp;&emsp;&lt;td&gt;html cheat sheet&lt;/td&gt;<br>
+                                &emsp;&emsp;&lt;td&gt;$0&lt;/td&gt;<br>
+                              &emsp;&lt;/tr&gt;<br>
+                        &lt;/table&gt;
+                    </code>
+                  </div>
+                      
+                  
+                  <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <table>
+                              <colgroup>
+                                 <col span="2" style="background-color:red">
+                                <col style="background-color:forestgreen">
+                              </colgroup>
+                              <tr>
+                                    <th>Site #</th>
+                                    <th>Title</th>
+                                    <th>Price</th>
+                              </tr>
+                              <tr>
+                                    <td>0004</td>
+                                   <td>html cheat sheet</td>
+                                     <td>$0</td>
+                               </tr>
+                        </table>
+                      </div>
+                </div>
+        </article>
+        <article id="tbody">
+            <h4>TBODY TAG</h4>
+            <p>Contains rows that hold the table's data. The HTML Table Body Element (&lt;tbody&gt;) defines one or more &lt;tr&gt; element data-rows to be the body of its parent &lt;table&gt; element (as long as no &lt;tr&gt; elements are immediate children of that table element.) In conjunction with a preceding &lt;thead&gt; and/or &lt;tfoot&gt; element, &lt;tbody&gt; provides additional semantic information for devices such as printers and displays. Of the parent table's child elements, &lt;tbody&gt; represents the content which, when longer than a page, will most likely differ for each page printed; while the content of &lt;thead&gt; and &lt;tfoot&gt; will be the same or similar for each page printed. For displays, &lt;tbody&gt; will enable separate scrolling of the &lt;thead&gt;, &lt;tfoot&gt;, and &lt;caption&gt; elements of the same parent &lt;table&gt; element. Note that unlike the &lt;thead&gt;, &lt;tfoot&gt;, and &lt;caption&gt; elements however, multiple &lt;tbody&gt; elements are permitted (if consecutive), allowing the data-rows in long tables to be divided into different sections, each separately formatted as needed.
+
+Attributes global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;<br>
+                                  &emsp;&lt;thead&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Month&lt;/th&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Savings&lt;/th&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/thead&gt;<br>
+                                  &emsp;&lt;tbody&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;January&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;-$80&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                       &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;February&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$100&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tbody&gt;<br>
+                                  &emsp;&lt;tfoot&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;Sum&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$20&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tfoot&gt;<br>
+                            &lt;/table&gt;
+                    </code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <table>
+                         <thead>
+                          <tr>
+                           <th>Month</th>
+                           <th>Savings</th>
+                          </tr>
+                         </thead>
+                         <tbody>
+                            <tr>
+                               <td>January</td>
+                               <td>-$80</td>
+                            </tr>
+                            <tr>
+                               <td>February</td>
+                               <td>$100</td>
+                            </tr>
+                         </tbody>
+                         <tfoot>
+                            <tr>
+                                <td>Sum</td>
+                                <td>$20</td>
+                            </tr>
+                         </tfoot>
+                        </table>
+                      </div>
+            </div>
+        </article>
+        <article id="td">
+            <h4>TD TAG</h4>
+            <p>Table cell. The Table cell HTML element (&lt;td&gt;) defines a cell of a table that contains data. It participates in the table model.
+
+Attributes (modifiers)
+colspan | rowspan | headers + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;<br>
+                                  &emsp;&lt;thead&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Month&lt;/th&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Savings&lt;/th&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/thead&gt;<br>
+                                  &emsp;&lt;tbody&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;January&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;-$80&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                       &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;February&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$100&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tbody&gt;<br>
+                                  &emsp;&lt;tfoot&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;Sum&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$20&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tfoot&gt;<br>
+                            &lt;/table&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                                                   <table>
+                         <thead>
+                          <tr>
+                           <th>Month</th>
+                           <th>Savings</th>
+                          </tr>
+                         </thead>
+                         <tbody>
+                            <tr>
+                               <td>January</td>
+                               <td>-$80</td>
+                            </tr>
+                            <tr>
+                               <td>February</td>
+                               <td>$100</td>
+                            </tr>
+                         </tbody>
+                         <tfoot>
+                            <tr>
+                                <td>Sum</td>
+                                <td>$20</td>
+                            </tr>
+                         </tfoot>
+                        </table>
+                      </div>
+            </div>
+        </article>
+        <article id="tfoot">
+            <h4>TFOOT TAG</h4>
+            <p>Contains rows with summary of data. The HTML Table Foot Element (&lt;tfoot&gt;) defines a set of rows summarizing the columns of the table.
+
+Attributes (modifiers) global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;<br>
+                                  &emsp;&lt;thead&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Month&lt;/th&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Savings&lt;/th&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/thead&gt;<br>
+                                  &emsp;&lt;tbody&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;January&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;-$80&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                       &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;February&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$100&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tbody&gt;<br>
+                                  &emsp;&lt;tfoot&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;Sum&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$20&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tfoot&gt;<br>
+                            &lt;/table&gt;
+                            </code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <table>
+                         <thead>
+                          <tr>
+                           <th>Month</th>
+                           <th>Savings</th>
+                          </tr>
+                         </thead>
+                         <tbody>
+                            <tr>
+                               <td>January</td>
+                               <td>-$80</td>
+                            </tr>
+                            <tr>
+                               <td>February</td>
+                               <td>$100</td>
+                            </tr>
+                         </tbody>
+                         <tfoot>
+                            <tr>
+                                <td>Sum</td>
+                                <td>$20</td>
+                            </tr>
+                         </tfoot>
+                        </table>
+                      </div>
+            </div>
+        </article>
+        <article id="th">
+            <h4>TH TAG</h4>
+            <p>Table heading. The HTML element table header cell &lt;th&gt; defines a cell as a header for a group of cells of a table. The group of cells that the header refers to is defined by the scope and headers attribute.
+
+Attributes (modifiers)
+colspan | rowspan | scope | headers + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;<br>
+                                  &emsp;&lt;thead&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Month&lt;/th&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Savings&lt;/th&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/thead&gt;<br>
+                                  &emsp;&lt;tbody&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;January&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;-$80&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                       &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;February&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$100&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tbody&gt;<br>
+                                  &emsp;&lt;tfoot&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;Sum&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$20&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tfoot&gt;<br>
+                            &lt;/table&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <table>
+                         <thead>
+                          <tr>
+                           <th>Month</th>
+                           <th>Savings</th>
+                          </tr>
+                         </thead>
+                         <tbody>
+                            <tr>
+                               <td>January</td>
+                               <td>-$80</td>
+                            </tr>
+                            <tr>
+                               <td>February</td>
+                               <td>$100</td>
+                            </tr>
+                         </tbody>
+                         <tfoot>
+                            <tr>
+                                <td>Sum</td>
+                                <td>$20</td>
+                            </tr>
+                         </tfoot>
+                        </table>
+                      </div>
+            </div>
+        </article>
+        <article id="thead">
+            <h4>THEAD TAG</h4>
+            <p>Contains rows with table headings. The HTML Table Head Element (&lt;thead&gt;) defines a set of rows defining the head of the columns of the table.
+
+Attributes (modifiers) global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;<br>
+                                  &emsp;&lt;thead&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Month&lt;/th&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Savings&lt;/th&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/thead&gt;<br>
+                                  &emsp;&lt;tbody&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;January&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;-$80&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                       &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;February&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$100&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tbody&gt;<br>
+                                  &emsp;&lt;tfoot&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;Sum&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$20&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tfoot&gt;<br>
+                            &lt;/table&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <table>
+                         <thead>
+                          <tr>
+                           <th>Month</th>
+                           <th>Savings</th>
+                          </tr>
+                         </thead>
+                         <tbody>
+                            <tr>
+                               <td>January</td>
+                               <td>-$80</td>
+                            </tr>
+                            <tr>
+                               <td>February</td>
+                               <td>$100</td>
+                            </tr>
+                         </tbody>
+                         <tfoot>
+                            <tr>
+                                <td>Sum</td>
+                                <td>$20</td>
+                            </tr>
+                         </tfoot>
+                        </table>
+                      </div>
+            </div>
+        </article>
+        <article id="tr">
+            <h4>TR TAG</h4>
+            <p>A row of cells in a table. The HTML element table row &lt;tr&gt; defines a row of cells in a table. Those can be a mix of &lt;td&gt; and &lt;th&gt; elements.
+
+Attributes (modifiers)
+Global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;table&gt;<br>
+                                  &emsp;&lt;thead&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Month&lt;/th&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;th&gt;Savings&lt;/th&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/thead&gt;<br>
+                                  &emsp;&lt;tbody&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;January&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;-$80&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                       &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;February&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$100&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tbody&gt;<br>
+                                  &emsp;&lt;tfoot&gt;<br>
+                                    &emsp;&emsp;&lt;tr&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;Sum&lt;/td&gt;<br>
+                                          &emsp;&emsp;&emsp;&lt;td&gt;$20&lt;/td&gt;<br>
+                                    &emsp;&emsp;&lt;/tr&gt;<br>
+                                  &emsp;&lt;/tfoot&gt;<br>
+                            &lt;/table&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <table>
+                         <thead>
+                          <tr>
+                           <th>Month</th>
+                           <th>Savings</th>
+                          </tr>
+                         </thead>
+                         <tbody>
+                            <tr>
+                               <td>January</td>
+                               <td>-$80</td>
+                            </tr>
+                            <tr>
+                               <td>February</td>
+                               <td>$100</td>
+                            </tr>
+                         </tbody>
+                         <tfoot>
+                            <tr>
+                                <td>Sum</td>
+                                <td>$20</td>
+                            </tr>
+                         </tfoot>
+                        </table>
+                      </div>
+            </div>
+        </article>
+    </section>
+    <!---------------------------------------------------------------FORM-------------------------------------------------------------------->
+    <section class="main-section" id="form_html_elements">
+        <header><h3>Form HTML Elements</h3></header>
+        <article id="button">
+            <h4>BUTTON TAG</h4>
+            <p>A button. The HTML &lt;button&gt; Element represents a clickable button.
+
+Attributes (modifiers)
+autofocus | disabled | form | formaction | formenctype | formmethod | formnovalidate | formtarget (_self | _blank | _parent | _top) | name | type | value + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;button name="button"&gt;Delete Internet&lt;/button&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <button name="button">Delete Internet</button>
+                      </div>
+            </div>
+        </article>
+        <article id="data">
+            <h4>DATA TAG</h4>
+            <p>Allows for machine-readable data to be provided. The HTML &lt;data&gt; Element links a given content with a machine-readable translation. If the content is time- or date-related, the &lt;time&gt; must be used.
+
+Attributes (modifiers)
+value + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;ul&gt;<br>
+                                 &emsp;&lt;li&gt;&lt;data value="3967381398"&gt;Mini Ketchup&lt;/data&gt;&lt;/li&gt;<br>
+                                 &emsp;&lt;li&gt;&lt;data value="3967381399"&gt;Jumbo Ketchup&lt;/data&gt;&lt;/li&gt;<br>
+                                 &emsp;&lt;li&gt;&lt;data value="3967381400"&gt;Mega Jumbo Ketchup&lt;/data&gt;&lt;/li&gt;<br>
+                              &lt;/ul&gt;
+                        </code>
+                  </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <ul> <li><data value="3967381398">Mini Ketchup</data></li> <li><data value="3967381399">Jumbo Ketchup</data></li> <li><data value="3967381400">Mega Jumbo Ketchup</data></li> </ul>
+                      </div>
+            </div>
+        </article>
+        <article id="datalist">
+            <h4>DATALIST TAG</h4>
+            <p>Define sets of options. The HTML Datalist Element (&lt;datalist&gt;) contains a set of &lt;option&gt; elements that represent the values available for other controls.
+
+Attributes (modifiers)
+Global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;label&gt;Choose a browser from this list:&lt;input list="browsers" name="myBrowser" /&gt;&lt;/label&gt;<br>
+                                &emsp;&lt;datalist id="browsers"&gt;<br>
+                                      &emsp;&emsp;&lt;option value="Chrome"&gt;<br>
+                                      &emsp;&emsp;&lt;option value="Firefox"&gt;<br>
+                                      &emsp;&emsp;&lt;option value="Internet Explorer"&gt;<br>
+                                      &emsp;&emsp;&lt;option value="Opera"&gt;<br>
+                                      &emsp;&emsp;&lt;option value="Safari"&gt;<br>
+                                      &emsp;&emsp;&lt;option value="Microsoft Edge"&gt;<br>
+                                &emsp;&lt;/datalist&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <label>Choose a browser from this list: <input list="browsers" name="myBrowser" /></label> <datalist id="browsers"> <option value="Chrome" /> <option value="Firefox"/> <option value="Internet Explorer"/> <option value="Opera"/> <option value="Safari"/> <option value="Microsoft Edge"/> </datalist>
+                      </div>
+            </div>
+        </article>
+        <article id="fieldset">
+            <h4>FIELDSET TAG</h4>
+            <p>Set of form controls grouped by theme. The HTML &lt;fieldset&gt; element is used to group several controls as well as labels (&lt;label&gt;) within a web form.
+
+Attributes (modifiers)
+disabled | form | name + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;form action="test.php" method="post"&gt;<br>
+                              &emsp;&lt;fieldset&gt;<br>
+                              &emsp;&emsp;&lt;legend&gt;<br>
+                              &emsp;&emsp;&emsp;Title<br>
+                              &emsp;&emsp;&lt;/legend&gt;<br>
+                            &emsp;&emsp;&lt;input type="radio"&gt; &lt;label for="radio"&gt;I am awesome&lt;/label&gt;<br>
+                              &emsp;&lt;/fieldset&gt;<br>
+                            &lt;/form&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <form action="test.php" method="post">
+                         <fieldset>
+                          <legend>
+                           Title
+                          </legend>
+                              <input type="radio"> <label for="radio">I am awesome</label>
+                         </fieldset>
+                        </form>
+                      </div>
+            </div>
+        </article>
+        <article id="form">
+            <h4>FORM TAG</h4>
+            <p>Used to create an HTML form for user input. The HTML &lt;form&gt; element represents a document section that contains interactive controls to submit information to a web server. It is possible to use the :valid and :invalid CSS pseudo-classes to style a &lt;form&gt; element.
+
+Attributes (modifiers)
+action | autocomplete | name | novalidate | accept-charset | enctype | method | target (_self | _blank | _parent | _top) + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;form action="test.php" method="post"&gt;<br>
+                              &emsp;&lt;fieldset&gt;<br>
+                              &emsp;&emsp;&lt;legend&gt;<br>
+                              &emsp;&emsp;&emsp;Form<br>
+                              &emsp;&emsp;&lt;/legend&gt;<br>
+                            &emsp;&emsp;&lt;input type="radio"&gt; &lt;label for="radio"&gt;This is in a form&lt;/label&gt;<br>
+                              &emsp;&lt;/fieldset&gt;<br>
+                            &lt;/form&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <form action="test.php" method="post">
+                         <fieldset>
+                          <legend>
+                           Form
+                          </legend>
+                              <input type="radio"> <label for="radio">This is in a form</label>
+                         </fieldset>
+                        </form>
+                      </div>
+            </div>
+        </article>
+        <article id="input">
+            <h4>INPUT TAG</h4>
+            <p>
+Generic form input. The HTML element &lt;input&gt; is used to create interactive controls for web-based forms in order to accept data from the user. How an &lt;input&gt; works varies considerably depending on the value of its type attribute.
+
+Attributes (modifiers)
+accept | alt | auto-complete | autofocus | checked | disabled | form | formaction | formenctype | formmethod | formnovalidate | formtarget | height | list | max | maxlength | min | multiple | name | pattern | placeholder | readonly | required | size | src | step | type | value | width | webkitdirectory | global | spellcheck | selectionDirection + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;input type="text" value="Type here"&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <input type="text" value="Type here">
+                      </div>
+            </div>
+        </article>
+        <article id="label">
+            <h4>LABEL TAG</h4>
+            <p>Caption for a form control. The HTML Label Element (&lt;label&gt;) represents a caption for an item in a user interface. It can be associated with a control either by placing the control element inside the &lt;label&gt; element, or by using the for attribute. Such a control is called the labeled control of the label element. One input can be associated with multiple labels.
+
+Attributes (modifiers)
+for + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;label&gt;Name: &lt;input type="text"&gt;&lt;/label&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <label>Name: <input type="text"></label>
+                      </div>
+            </div>
+        </article>
+        <article id="legend">
+            <h4>LEGEND TAG</h4>
+            <p>Define a name for a fieldset. The HTML &lt;legend&gt; Element (or HTML Legend Field Element) represents a caption for the content of its parent &lt;fieldset&gt;.
+
+Attributes (modifiers)
+Global</p>
+
+                <div class="container">
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;form action="test.php" method="post"&gt;<br>
+                              &emsp;&lt;fieldset&gt;<br>
+                              &emsp;&emsp;&lt;legend&gt;<br>
+                              &emsp;&emsp;&emsp;This is the legend<br>
+                              &emsp;&emsp;&lt;/legend&gt;<br>
+                            &emsp;&emsp;&lt;input type="checkbox"&gt; &lt;label for="checkbox"&gt;Take a break&lt;/label&gt;<br>
+                              &emsp;&lt;/fieldset&gt;<br>
+                            &lt;/form&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <form action="test.php" method="post">
+                         <fieldset>
+                          <legend>
+                           This is the legend
+                          </legend>
+                              <input type="checkbox"> <label for="checkbox">Take a break</label>
+                         </fieldset>
+                        </form>
+                      </div>
+            </div>
+        </article>
+        <article id="meter">
+            <h4>METER TAG</h4>
+            <p>Control for entering a numeric value in a known range. The HTML &lt;meter&gt; Element represents either a scalar value within a known range or a fractional value.
+
+Attributes (modifiers)
+high | low | max | min | optimum | value | form + global </p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;p&gt;Heat the oven to &lt;meter min="200" max="500" value="350"&gt;350 degrees&lt;/meter&gt;.&lt;/p&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p>Heat the oven to <meter min="200" max="500" value="350">350 degrees</meter>.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="optgroup">
+            <h4>OPTGROUP TAG</h4>
+            <p>Group of option. In a Web form, the HTML &lt;optgroup&gt; element creates a grouping of options within a &lt;select&gt; element.
+
+Attributes (modifiers)
+disabled | label + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;select&gt;<br>
+                                  &emsp;&lt;optgroup label="Group 1"&gt;<br>
+                                &emsp;&emsp;&lt;option&gt;Option 1.1&lt;/option&gt;<br>
+                                  &emsp;&lt;/optgroup&gt; <br>
+                                  &emsp;&lt;optgroup label="Group 2"&gt;<br>
+                                &emsp;&emsp;&lt;option&gt;Option 2.1&lt;/option&gt;<br>
+                                &emsp;&emsp;&lt;option&gt;Option 2.2&lt;/option&gt;<br>
+                                  &emsp;&lt;/optgroup&gt;<br>
+                                  &emsp;&lt;optgroup label="Group 3" disabled&gt;<br>
+                                &emsp;&emsp;&lt;option&gt;Option 3.1&lt;/option&gt;<br>
+                                &emsp;&emsp;&lt;option&gt;Option 3.2&lt;/option&gt;<br>
+                                &emsp;&lt;option&gt;Option 3.3&lt;/option&gt;<br>
+                                  &emsp;&lt;/optgroup&gt;<br>
+                            &lt;/select&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <select> <optgroup label="Group 1"> <option>Option 1.1</option> </optgroup> <optgroup label="Group 2"> <option>Option 2.1</option> <option>Option 2.2</option> </optgroup> <optgroup label="Group 3" disabled> <option>Option 3.1</option> <option>Option 3.2</option> <option>Option 3.3</option> </optgroup> </select>
+                      </div>
+            </div>
+        </article>
+        <article id="option">
+            <h4>OPTION TAG</h4>
+            <p>Single option within a select control. In a Web form, the HTML &lt;option&gt; element is used to create a control representing an item within a &lt;select&gt;, an &lt;optgroup&gt; or a &lt;datalist&gt; HTML5 element.
+
+Attributes (modifiers)
+disabled | label | selected | value + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;select name="select"&gt;<br>
+                                  &emsp;&lt;option value="value1"&gt;Value 1&lt;/option&gt;<br>
+                                  &emsp;&lt;option value="value2" selected&gt;Value 2&lt;/option&gt;<br>
+                                  &emsp;&lt;option value="value3"&gt;Value 3&lt;/option&gt;<br>
+                              &lt;/select&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <select name="select"> <option value="value1">Value 1</option> <option value="value2" selected>Value 2</option> <option value="value3">Value 3</option> </select>
+                      </div>
+            </div>
+        </article>
+        <article id="output">
+            <h4>OUTPUT TAG</h4>
+            <p>Contains the results of a calculation. The HTML &lt;output&gt; element represents the result of a calculation or user action.
+
+Attributes (modifiers)
+form | for | name + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
+                                &emsp;&lt;input type="range" name="b" value="50" /&gt; +<br>
+                                &emsp;&lt;input type="number" name="a" value="10" /&gt; =<br>
+                                &emsp;&lt;output name="result"&gt;60&lt;/output&gt;<br>
+                              &lt;/form&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <form oninput="result.value=parseInt(a.value)+parseInt(b.value)"> <input type="range" name="b" value="50" /> + <input type="number" name="a" value="10" /> = <output name="result">60</output> </form>
+
+                      </div>
+            </div>
+        </article>
+        <article id="progress">
+            <h4>PROGRESS TAG</h4>
+            <p>Control for displaying progress of a task. The HTML &lt;progress&gt; Element is used to view the completion progress of a task. While the specifics of how it's displayed is left up to the browser developer, it's typically displayed as a progress bar. Javascript can be used to manipulate the value of progress bar.
+
+Attributes (modifiers)
+max | value + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;progress value="70" max="100"&gt;70 %&lt;/progress&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <progress value="70" max="100">70 %</progress>
+                      </div>
+            </div>
+        </article>
+        <article id="select">
+            <h4>SELECT TAG</h4>
+            <p>Control for selecting from multiple options. The HTML select (&lt;select&gt;) element represents a control that presents a menu of options. The options within the menu are represented by &lt;option&gt; elements, which can be grouped by &lt;optgroup&gt; elements. Options can be pre-selected for the user.
+
+Attributes (modifiers)
+autofocus | size | disabled | form | multiple | name | required + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;select name="select"&gt;<br>
+                                  &emsp;&lt;option value="value1"&gt;Value 1&lt;/option&gt;<br>
+                                  &emsp;&lt;option value="value2" selected&gt;Value 2&lt;/option&gt;<br>
+                                  &emsp;&lt;option value="value3"&gt;Value 3&lt;/option&gt;<br>
+                              &lt;/select&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <select name="select"> <option value="value1">Value 1</option> <option value="value2" selected>Value 2</option> <option value="value3">Value 3</option> </select>
+                      </div>
+            </div>
+        </article>
+        <article id="textarea">
+            <h4>TEXTAREA TAG</h4>
+            <p>
+Multiline free-form text input. The HTML &lt;textarea&gt; element represents a multi-line plain-text editing control.
+
+Attributes (modifiers)
+autocomplete | autofocus | cols | disabled | dirname | form | name | readonly | required | rows | maxlength | minlength | placeholder | wrap | selectionDirection | selectionEnd | selectionStart | spellcheck + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;textarea name="textarea" rows="10" cols="50"&gt;Write something here&lt;/textarea&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+                      </div>
+            </div>
+        </article>
+    </section>
+    <!---------------------------------------------------------CONTENT EMBEDDING------------------------------------------------------------->
+    <section class="main-section" id="content_embedding_html_elements">
+        <header><h3>Content Embedding HTML Elements</h3></header>
+        <article id="embed">
+            <h4>EMBED TAG</h4>
+            <p>Integration point for an external (typically non-HTML) application or interactive content. The HTML &lt;embed&gt; Element represents an integration point for an external application or interactive content (in other words, a plug-in).
+
+Attributes (modifiers)
+height | src | type | width + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;html&gt;<br>
+                                    &emsp;&lt;body&gt;<br>
+                                    &emsp;&emsp;&lt;embed src="helloworld.swf"&gt;<br>
+                                    &emsp;&lt;/body&gt;<br>
+                              &lt;/html&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <object data="https://farm8.staticflickr.com/7892/32234501537_b79eb8b63a.jpg" width="300" height="auto"></object>
+                      </div>
+            </div>
+        </article>
+        <article id="iframe">
+            <h4>IFRAME TAG</h4>
+            <p>Nested browser frame. The HTML Inline Frame Element (&lt;iframe&gt;) represents a nested browsing context, effectively embedding another HTML page into the current page. In HTML 4.01, a document may contain a head and a body or a head and a frameset, but not both a body and a frameset. However, an &lt;iframe&gt; can be used within a normal document body. Each browsing context has its own session history and active document. The browsing context that contains the embedded content is called the parent browsing context. The top-level browsing context (which has no parent) is typically the browser window.
+
+Attributes (modifiers)
+allowfullscreen | src | name | sandbox | seamlesss | width | height | srcdoc | referrerpolicy + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;iframe width="400" height="315" src="https://www.youtube.com/embed/fBixwB731Ww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                      <html><body>
+                          <p><iframe width="300" height="280" src="https://www.youtube.com/embed/fBixwB731Ww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                      </body></html>
+                      </div>
+            </div>
+        </article>
+        <article id="img">
+            <h4>IMG TAG</h4>
+            <p>An image. The HTML &lt;img&gt; element represents an image in the document.
+
+Attributes (modifiers)
+alt | src | height | ismap | usemap | width | crossorigin | longdesc | referrerpolicy | sizes | srcset + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;img src="https://farm8.staticflickr.com/7895/40198766953_f4ab8b3f4b.jpg" width="500" height="342" alt="Carnival - Fasching - Carnaval"&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <img src="https://farm8.staticflickr.com/7895/40198766953_f4ab8b3f4b.jpg" width="auto" height="auto" alt="Carnival - Fasching - Carnaval"> 
+                      </div>
+            </div>
+        </article>
+        <article id="object">
+            <h4>OBJECT TAG</h4>
+            <p>External resource such as an image, iframe or plugin. The HTML Embedded Object Element (&lt;object&gt;) represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin.
+
+Attributes (modifiers)
+data | height | type | usemap | width | form | name | typemustmatch | usemap + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;object data="https://farm8.staticflickr.com/7806/46254240465_46dfe82192.jpg" width="300" height="auto"&gt;&lt;object&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <object data="https://farm8.staticflickr.com/7806/46254240465_46dfe82192.jpg" width="300" height="auto"></object>
+                          
+                      </div>
+            </div>
+        </article>
+        <article id="param">
+            <h4>PARAM TAG</h4>
+            <p>Parameters for the parent object. The HTML &lt;param&gt; Element (or HTML Parameter Element) defines parameters for &lt;object&gt;.
+
+Attributes (modifiers)
+name | value + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;object data="move.swf" type="application/x-shockwave-flash"&gt;
+  &lt;param name="foo" value="bar"&gt;
+&lt;/object&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <object data="https://farm8.staticflickr.com/7812/47124408412_b44642bb25.jpg" width="300" height="auto"></object>
+                      </div>
+            </div>
+        </article>
+        <article id="source">
+            <h4>SOURCE TAG</h4>
+            <p>Alternative sources for parent video or audio elements. The HTML &lt;source&gt; element specifies multiple media resources for either the &lt;picture&gt;, the &lt;audio&gt; or the &lt;video&gt; element. It is an empty element. It is commonly used to serve the same media content in multiple formats supported by different browsers.
+
+Attributes (modifiers)
+media | src | type | sizes | srcset + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>
+                        &lt;video controls width="400px"&gt;<br>
+                            &lt;source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4" type="video/mp4"&gt;<br>
+                        &lt;/video&gt;
+                        </code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                    <video controls width="400px">
+                        <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4" type="video/mp4">
+                    </video>
+                      </div>
+            </div>
+        </article>
+        <article id="area">
+            <h4>AREA TAG</h4>
+            <p>Hyperlink with some text and a corresponding area on an image map, or a dead area on an image map. The HTML &lt;area&gt; element defines a hot-spot region on an image, and optionally associates it with a hypertext link. This element is used only within a &lt;map&gt; element.
+
+Attributes (modifiers)
+alt | coords | download | href | hreflang | media | rel | referrerpolicy | shape | target | type + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;img src="https://farm8.staticflickr.com/7906/47176628731_1232c1eae3.jpg" width="345" height="180" alt="Red Green Blue" usemap="#colors"&gt;<br>
+                            &lt;map name="colors"&gt;<br>
+                                  &lt;area shape="circle" coords="40,37,29"  alt="red" href="https://farm8.staticflickr.com/7812/46262533685_9a8deb416a.jpg" target="_blank"&gt;<br>
+                                  &lt;area shape="circle" coords="119,37,29" alt="Green" href="https://farm8.staticflickr.com/7896/46262537325_ebc9c3b0f2.jpg" target="_blank"&gt;<br>
+                                  &lt;area shape="circle" coords="219,34,30" alt="Blue" href="https://farm8.staticflickr.com/7916/46262540525_551e3b4dbd.jpg" target="_blank"&gt;<br>
+                            &lt;/map&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <img src="https://farm8.staticflickr.com/7906/47176628731_1232c1eae3.jpg" width="345" height="180" alt="Red Green Blue" usemap="#colors">
+                            <map name="colors">
+                                  <area shape="circle" coords="40,37,29"  alt="red" href="https://farm8.staticflickr.com/7812/46262533685_9a8deb416a.jpg" target="_blank">
+                                  <area shape="circle" coords="119,37,29" alt="Green" href="https://farm8.staticflickr.com/7896/46262537325_ebc9c3b0f2.jpg" target="_blank">
+                                  <area shape="circle" coords="219,34,30" alt="Blue" href="https://farm8.staticflickr.com/7916/46262540525_551e3b4dbd.jpg" target="_blank">
+                            </map>
+                      </div>
+            </div>
+        </article>
+            </section>        
+    <!------------------------------------------------------------MULTIMEDIA----------------------------------------------------------------->
+    <section class="main-section" id="images_and_multimedia_html_elements">
+        <header><h3>Images and Multimedia HTML Elements</h3></header>
+        <article id="audio">
+            <h4>AUDIO TAG</h4>
+            <p>Sound or audio stream. The HTML &lt;audio&gt; element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the &lt;source&gt; element; the browser will choose the most suitable one.
+
+Attributes (modifiers)
+autoplay | buffered | preload | loop | controls | src | muted | played | volume + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;audio controls src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg"&gt;<br>
+                          &emsp;Your browser does not support the audio element.<br>
+                        &lt;/audio&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <audio controls src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg"> Your browser does not support the audio element. </audio>
+                      </div>
+            </div>
+        </article>
+        <article id="map">
+            <h4>MAP TAG</h4>
+            <p>Image map for adding hyperlinks to parts of an image. The HTML &lt;map&gt; element is used with &lt;area&gt; elements to define an image map (a clickable link area).
+
+Attributes (modifiers)
+name + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;img src="https://farm8.staticflickr.com/7906/47176628731_1232c1eae3.jpg" width="345" height="180" alt="Red Green Blue" usemap="#colors"&gt;<br>
+                            &lt;map name="colors"&gt;<br>
+                                  &lt;area shape="circle" coords="40,37,29"  alt="red" href="https://farm8.staticflickr.com/7812/46262533685_9a8deb416a.jpg" target="_blank"&gt;<br>
+                                  &lt;area shape="circle" coords="119,37,29" alt="Green" href="https://farm8.staticflickr.com/7896/46262537325_ebc9c3b0f2.jpg" target="_blank"&gt;<br>
+                                  &lt;area shape="circle" coords="219,34,30" alt="Blue" href="https://farm8.staticflickr.com/7916/46262540525_551e3b4dbd.jpg" target="_blank"&gt;<br>
+                            &lt;/map&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <img src="https://farm8.staticflickr.com/7906/47176628731_1232c1eae3.jpg" width="345" height="180" alt="Red Green Blue" usemap="#colors">
+                            <map name="colors">
+                                  <area shape="circle" coords="40,37,29"  alt="red" href="https://farm8.staticflickr.com/7812/46262533685_9a8deb416a.jpg" target="_blank">
+                                  <area shape="circle" coords="119,37,29" alt="Green" href="https://farm8.staticflickr.com/7896/46262537325_ebc9c3b0f2.jpg" target="_blank">
+                                  <area shape="circle" coords="219,34,30" alt="Blue" href="https://farm8.staticflickr.com/7916/46262540525_551e3b4dbd.jpg" target="_blank">
+                            </map>
+                      </div>
+            </div>
+        </article>
+        <article id="track">
+            <h4>TRACK TAG</h4>
+            <p>Specifies external timing track for media element. The HTML &lt;track&gt; element is used as a child of the media elements—&lt;audio&gt; and &lt;video&gt;. It lets you specify timed text tracks (or time-based data), for example to automatically handle subtitles. The tracks are formatted in WebVTT format (.vtt files) — Web Video Text Tracks.
+
+Attributes (modifiers)
+default | kind | label | src | srclang + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track" target="_blank" style="color:aqua"&gt;Check out Mozillas &lt;track&gt; definition&lt;/a&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track" target="_blank" style="color:aqua">Check out Mozillas &lt;track&gt; definition</a>
+                      </div>
+            </div>
+        </article>
+        <article id="video">
+            <h4>VIDEO TAG</h4>
+            <p>Used for playing videos or movies. Use the HTML &lt;video&gt; element to embed video content in a document. The video element contains one or more video sources. To specify a video source, use either the src attribute or the &lt;source&gt; element; the browser will choose the most suitable one.
+
+Attributes (modifiers)
+autoplay | controls | height | loop | poster | preload | src | width | buffered | crossorigin | muted | played + global </p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;video controls src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" width="400px"&gt; &lt;/video&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <video controls src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" width="400px"> </video>
+                      </div>
+            </div>
+        </article>
+        <article id="details">
+            <h4>DETAILS TAG</h4>
+            <p>Contains additional information, such as the contents of an accordian view. The HTML Details Element (&lt;details&gt;) is used as a disclosure widget from which the user can retrieve additional information.
+
+Attributes (modifiers)
+open + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;details&gt;&lt;summary&gt;Some details&lt;/summary&gt;&lt;p&gt;More info about the details.&lt;/p&gt;&lt;/details&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <details><summary>Some details</summary><p>More info about the details.</p></details>
+                      </div>
+            </div>
+        </article>
+        <article id="dialog">
+            <h4>DIALOG TAG</h4>
+            <p>The HTML &lt;dialog&gt; element represents a dialog box or other interactive component, such as an inspector or window. &lt;form&gt; elements can be integrated within a dialog by specifying them with the attribute method="dialog". When such a form is submitted, the dialog is closed with a returnValue attribute set to the value of the submit button used.
+
+Attributes (modifiers)
+open + global</p>
+
+            <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                    <code>  &lt;button id="Dialogbutton"&gt;Open dialog&lt;/button&gt;
+                             &lt;dialog id="modal"&gt;<br>
+                                  &emsp;&lt;form action="#"&gt;<br>
+                                    &emsp;&emsp;&lt;label&gt;<br>
+                                          &emsp;&emsp;&emsp;Name:&lt;input type="text" /&gt;<br>
+                                    &emsp;&emsp;&lt;/label&gt;<br>
+                                    &emsp;&emsp;&lt;label&gt;<br>
+                                          &emsp;&emsp;&emsp;Password:&lt;input type="password" /&gt;<br>
+                                    &emsp;&emsp;&lt;/label&gt;<br>
+                                    &emsp;&emsp;&lt;input type="submit" value="Submit" /&gt;<br>
+                                  &emsp;&lt;/form&gt;<br>
+                            &lt;/dialog&gt;<br>
+                            &lt;script&gt;<br>
+                            &emsp;&emsp;Dialogbutton.onclick = () =&gt; {<br>
+                              &emsp;&emsp;modal.showModal();<br>
+                            }<br>
+                            &lt;/script&gt;</code></div>                  
+                  <div class="codeOut">
+                      <h5>Code Output</h5>
+                    <h6>*Please note: This code output uses Javascript on the button.</h6>
+                            <button id="Dialogbutton">Open dialog</button>
+                             <dialog id="modal">
+                                  <form action="#">
+                                    <label>
+                                          Name:<input type="text" />
+                                    </label>
+                                    <label>
+                                          Password:<input type="password" />
+                                    </label>
+                                        <input type="submit" value="Submit" />
+                                  </form>
+                            </dialog>
+                            <script>
+                            Dialogbutton.onclick = () => {
+                              modal.showModal();
+                            }</script>
+                  </div>
+            </div>
+        </article>
+        <article id="menu">
+            <h4>MENU TAG</h4>
+            <p>Set of commands. The HTML &lt;menu&gt; element represents a group of commands that a user can perform or activate. This includes both list menus, which might appear across the top of a screen, as well as context menus, such as those that might appear underneath a button after it has been clicked.
+
+Attributes (modifiers)
+label | type + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;menu type="context" id="popup-menu"&gt;<br>
+                                  &lt;menuitem&gt;Milk,&lt;/menuitem&gt;<br>
+                                  &lt;menuitem&gt;Bread&lt;/menuitem&gt; &lt;hr&gt;<br>
+                                  &lt;menuitem&gt;*If no milk then try somewhere else.&lt;/menuitem&gt;<br>
+                                &lt;/menu&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <menu type="context" id="popup-menu"> <menuitem>Milk,</menuitem>
+                        <menuitem>Bread</menuitem> <hr> 
+                        <menuitem>*If no milk then try somewhere else.</menuitem>
+                        </menu>
+                      </div>
+            </div>
+        </article>
+        <article id="summary">
+            <h4>SUMMARY TAG</h4>
+            <p>Caption of a details element. The HTML summary element (&lt;summary&gt;) is used as a summary, caption, or legend for the content of a &lt;details&gt; element.
+
+Attributes (modifiers) glabal</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;details&gt;&lt;summary&gt;Some details&lt;/summary&gt;&lt;p&gt;More info about the details.&lt;/p&gt;&lt;/details&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <details><summary>Some details</summary><p>More info about the details.</p></details>
+                      </div>
+            </div>
+        </article>
+        <article id="canvas">
+            <h4>CANVAS TAG</h4>
+            <p>Bitmap which is editable by client side scripts. The HTML &lt;canvas&gt; Element can be used to draw graphics via scripting (usually JavaScript). For example, it can be used to draw graphs, make photo compositions or even perform animations. You may (and should) provide alternate content inside the &lt;canvas&gt; block. That content will be rendered both on older browsers that don't support canvas and in browsers with JavaScript disabled.
+
+Attributes (modifiers)
+height | width + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>&lt;canvas&gt;id="myCanvas"&lt;/canvas&gt;<br>
+
+                                &lt;script&gt;<br>
+                                var canvas = document.getElementById("myCanvas");<br>
+                                var ctx = canvas.getContext("2d");<br>
+                                ctx.fillStyle = "#FF0000";<br>
+                                ctx.fillRect(0, 0, 80, 80);<br>
+                                &lt;/script&gt;</code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                      <h6>*Please note: This code output uses Javascript to draw the image.</h6>
+                          <canvas id="myCanvas"></canvas>
+
+                            <script>
+                                var canvas = document.getElementById("myCanvas");
+                                var ctx = canvas.getContext("2d");
+                                ctx.fillStyle = "#FF0000";
+                                ctx.fillRect(0, 0, 80, 80);
+                            </script>
+                      </div>
+            </div>
+        </article>
+        <article id="noscript">
+            <h4>NOSCRIPT TAG</h4>
+            <p>Contains elements that are part of the document only if scripting is disabled. The HTML &lt;noscript&gt; Element defines a section of html to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.
+
+Attributes (modifiers)
+Global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>
+                        &lt;script&gt;<br>
+                            &emsp;document.write("We are using JavaScript to write this line!")<br>
+                        &lt;/script&gt;<br>
+                        &lt;noscript&gt;Sorry, your browser does not support JavaScript!&lt;/noscript&gt;<br>
+                        &lt;p&gt;A browser without support for JavaScript will show the text inside the noscript element.&lt;/p&gt;
+                        </code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <script>
+                            document.write("We are using JavaScript to write this line!")
+                        </script>
+                        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+                        <p>A browser without support for JavaScript will show the text inside the noscript element.</p>
+                      </div>
+            </div>
+        </article>
+        <article id="script">
+            <h4>SCRIPT TAG</h4>
+            <p>Inline or linked client side scripts. The HTML Script Element (&lt;script&gt;) is used to embed or reference an executable script within an HTML or XHTML document. Scripts without async or defer attributes, as well as inline scripts, are fetched and executed immediately, before the browser continues to parse the page.
+
+Attributes (modifiers)
+async | type | defer | src | charset | integrity | text | language | defer | crossorigin + global</p>
+
+                <div class="container">    
+                <div class="codeEx">
+                    <h5>Code Example</h5>            
+                        <code>
+                        &lt;p id="script_test"&gt;&lt;/p&gt;<br>
+                        &lt;script&gt;<br>
+                            &emsp;document.getElementById("script_test").innerHTML = "Hello JavaScript!";<br>
+                        &lt;/script&gt;
+                        </code>
+                      </div>
+                      
+                  
+                      <div class="codeOut">
+                      <h5>Code Output</h5>
+                          <p id="script_test"></p>
+                        <script>
+                            document.getElementById("script_test").innerHTML = "Hello JavaScript!";
+                        </script> 
+                      </div>
+            </div>
+        </article>
+            </section>        
+    <!--------------------------------------------------------------GLOBAL------------------------------------------------------------------->
+    <section class="main-section" id="global_html_attributes">
+        <header><h3>Global HTML Attributes</h3></header>
+        <article>
+            <h4>Here below is a list of attributes supported by all HTML5 tags</h4>
+            
+            <table class="global_new_table" style="width:100%">
+                  <tr>
+                      <th>Global Attributes</th><th>Attribute</th> <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>accesskey</td><td>Specifies a keyboard shortcut to access an element</td> <td>character</td>
+                  </tr>
+                  <tr>
+                      <td>class</td><td>Specifies a classname for an element (used to specify a class in a style sheet)</td><td>classname</td>
+                </tr>
+                   <tr>
+                    <td>contenteditable</td><td>Specifies if the user is allowed to edit the content or not</td><td>true | false</td>
+                  </tr>
+                   <tr>
+                    <td>contextmenu</td><td>Specifies the context menu for an element</td><td>menu_id</td>
+                  </tr>
+                 <tr>
+                    <td>dir</td><td>Specifies the text direction for the content in an element</td><td>ltr | rtl</td>
+                  </tr>
+                 <tr>
+                    <td>draggable</td><td>Specifies whether or not a user is allowed to drag an element</td><td>true | false | auto</td>
+                  </tr>
+                 <tr>
+                    <td>dropzone</td><td>Specifies what happens when dragged items/data is dropped in the element</td><td>copy | move | link</td>
+                  </tr>
+                 <tr>
+                    <td>hidden</td><td>Specifies that the element is not relevant. Hidden elements are not displayed</td><td>hidden</td>
+                  </tr>
+                 <tr>
+                    <td>id</td><td>Specifies a unique id for an element</td><td>id</td>
+                  </tr>
+                 <tr>
+                    <td>lang</td><td>Specifies a language code for the content in an element.</td><td>language_code</td>
+                  </tr>
+                 <tr>
+                    <td>spellcheck</td><td>Specifies if the element must have its spelling and grammar checked</td><td>true | false</td>
+                  </tr>
+                 <tr>
+                    <td>style</td><td>Specifies an inline style for an element</td><td>style_definition</td>
+                  </tr>
+                 <tr>
+                    <td>tabindex</td><td>Specifies the tab order of an element</td><td>number</td>
+                  </tr>
+                 <tr>
+                    <td>title</td><td>Specifies extra information about an element</td><td>text</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+<!-- NEW TAGS -->
+    <section class="main-section" id="new_tags_in_html5">
+        <header><h3>New Tags in HTML5</h3></header>
+        <article>
+          <h4>Here below is a list of the new elements introduced in HTML5</h4>
+          <table class="global_new_table" style="width:100%">
+            <tr>
+              <th>Tag</th><th>Description</th>
+            </tr>
+            <tr>
+              <td>&lt;article&gt;</td><td>Specifies an article.</td>
+            </tr>
+            <tr>
+              <td>&lt;aside&gt;</td><td>Specifies content aside from the page content.</td>
+            </tr>
+            <tr>
+              <td>&lt;bdi&gt;</td><td>For bi-directional text formatting.</td>
+        </tr>
+        <tr>
+          <td>&lt;details&gt;</td><td>Specifies details of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;dialog&gt;</td><td>Specifies that part of an application is interactive.</td>
+        </tr>
+        <tr>
+          <td>&lt;figcaption&gt;</td><td>Specifies caption for the figure element.</td>
+        </tr>
+        <tr>
+          <td>&lt;figure&gt;</td><td>Specifies a group of media content, and their caption.</td>
+        </tr>
+        <tr>
+          <td>&lt;footer&gt;</td><td>Specifies a footer for a section or page.</td>
+        </tr>
+        <tr>
+          <td>&lt;header&gt;</td><td>Specifies a group of introductory or navigational aids, 
+		    including hgroup elements.</td>
+        </tr>
+        <tr>
+                <td>&lt;main&gt;</td><td>Specifies the main content area of an HTML document.</td>
+        </tr>
+        <tr>
+          <td>&lt;mark&gt;</td><td>Specifies marked text.</td>
+        </tr>
+        <tr>
+          <td>&lt;menuitem&gt;</td><td>Specifies a command that a user can invoke from a popup menu.</td>
+        </tr>
+        <tr>
+          <td>&lt;meter&gt;</td><td>Specifies measurement within a predefined range.</td>
+        </tr>
+        <tr>
+          <td>&lt;nav&gt;</td><td>Specifies navigation links.</td>
+        </tr>
+        <tr>
+          <td>&lt;progress&gt;</td><td>Specifies progress of a task of any kind.</td>
+        </tr>
+        <tr>
+          <td>&lt;rp&gt;</td><td>Used for the benefit of browsers that don't support ruby annotations.</td>
+        </tr>
+        <tr>
+          <td>&lt;rt&gt;</td><td>Specifies the ruby text component of a ruby annotation.</td>
+        </tr>
+        <tr>
+          <td>&lt;ruby&gt;</td><td>Specifies a ruby annotation (used in East Asian typography).</td>
+        </tr>
+        <tr>
+          <td>&lt;section&gt;</td><td>Specifies a section.</td>
+        </tr>
+        <tr>
+          <td>&lt;summary&gt;</td><td>Specifies a summary / caption for the &lt;details&gt; element.</td>
+        </tr>
+        <tr>
+          <td>&lt;time&gt;</td><td>Specifies a date/time.</td>
+        </tr>
+        <tr>
+          <td>&lt;wbr&gt;</td><td>Specifies a line break opportunity for very long words and strings 
+		    of text with no spaces.</td>
+        </tr>
+      </table>
+    </article>
+  </section>        
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class="main-section" id="references">
+    <header><h3>References</h3></header>
+    <h4>A huge thanks to the following websites for definitions and examples used:</h4>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Mozilla</a></li>
+      <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+      <li><a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a></li>
+      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      <li><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></li>
+      <li><a href="https://digital.com/tools/html-cheatsheet/#metadata" target="_blank">Digital</a></li>
+    </ul>
+  </section>
+</main>
+</body>
+<footer>
+  <div id="universalFooter" class="footer">
+    <p>Created for FreeCodeCamp.org&emsp;<br>
+    by Josh(butters)&emsp;</p>
+  </div>
+</footer>
+</html>
