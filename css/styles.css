@@ -1,0 +1,153 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Molengo');
+html,body,main{
+	overflow-x: hidden;
+ 	min-width:200px;
+    color: #4d4e53;
+    background-color:aliceblue;
+    font-family: Molengo,'Open Sans',Arial,sans-serif;
+    line-height: 1.5;
+	margin-top: -1.5px;
+	
+}
+
+section{
+	width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+
+
+footer {
+	position:inherit;
+	bottom: 0;
+	width: 100%;
+	background-color: #111;
+	color: aliceblue;
+	text-align:right;
+	font-size: 20px;
+	overflow: hidden;
+	padding-bottom: 0;
+	margin: 0;
+	
+}
+/*-------------Nav Bar------------------*/
+#navbar {
+  height: 100%;
+  width: 313px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+#navbar a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+	margin-left: -15px;
+}
+#navbar h1{
+	font-size: 30px;
+	text-align: center;
+}
+#navbar img{
+	max-width:313px;
+	margin-top: -18px;
+}
+.nav-link{
+	padding: 6px 8px 6px 16px;
+}
+#navbar a:hover, .dropdown-btn:hover {
+  color: #10cc36;
+}
+.dropdown {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+
+/*-------------MAIN------------*/
+#main-doc{
+  position:relative;
+  margin-left:310px;
+  padding:20px;
+  margin-bottom:110px;
+}
+section article{
+  color: #111;
+  margin:15px;
+  font-size:1.2em;/*0.96em;*/
+}
+#main-doc h3{
+	color: #111;
+	font-size:30px;
+	margin-top:0px;
+}
+
+/*------------Code Box--------------*/
+.container{
+	display: flex;
+	flex-direction: row;
+	/*padding: 30px;*/
+}
+
+.containerFix{
+	display: flex;
+	flex-direction: column;
+}
+.container h5{
+	font-size:20px;
+	text-align: center;
+	margin-top:4px;
+	color:aliceblue;
+	
+}
+
+.codeEx{
+	color:#10cc36;
+	background-color:#111;
+	min-height: 100px;
+	border-radius: 5px;
+	width: 50%;
+	margin-left: 5px;
+	max-width: 50%;
+	border-style:solid;
+	border-width: 3px;
+	border-color: #4d4e53;
+	word-wrap: break-word;
+
+
+	
+}
+.codeOut{
+	color: whitesmoke;
+	background-color: #111;
+	min-height: 100px;
+	border-radius: 5px;
+	width: 50%;
+	margin-left: 30px;
+	max-width: 50%;border-style:solid;
+	border-width: 3px;
+	border-color: #4d4e53;
+	word-wrap: break-word;
+}
+
+@media screen and (max-width:600px) {
+	#navbar{width:100px;}
+	#main-doc{margin-left: 105px;}
+}
